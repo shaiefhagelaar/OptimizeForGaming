@@ -289,7 +289,7 @@ EXM Premium Laptop Powerplan                       = Applied
 #### System Cleaner
 
 -----
-Do a system clean up as you see fit
+* Do a system clean up as you see fit
 -----
 
 #### Services
@@ -302,14 +302,14 @@ Do a system clean up as you see fit
 #### Autoruns
 
 -----
-Do check what services you can and cannot disable
+* Do check what services you can and cannot disable
 -----
 
 
 #### Autoruns
 
 -----
-Uninstall any apps you see fit and know what will break if you do uninstall them
+* Uninstall any apps you see fit and know what will break if you do uninstall them
 -----
 
 #### Network
@@ -320,22 +320,22 @@ Tweaks
 
 -----
 
-Disable Automatic TCP Adjustment                   = +
-Disable IPv6                                       = +
-Disable Ipv6 Transistion Services                  = +
-Disable Security Profiles                          = -
-Enable Weak Host Send/Recieve                      = -
-Enhance Connection Stability                       = +
-Improve Network Packet Acknowlegdement             = +
-Optimize IPv6 Address Handeling                    = -
-Optimize MTU Size                                  = +
-Optimize Neighbor Cache                            = +
-Optimize Offloading Features                       = +
-Optimize Packet Coalescing                         = +
-Optimize Winsock Buffer Behaviour                  = +
-Set Stabilize Network Routing                      = +
-Disable Heuristics                                 = +
-Optimize MPP                                       = +
+* Disable Automatic TCP Adjustment                   = +
+* Disable IPv6                                       = +
+* Disable Ipv6 Transistion Services                  = +
+* Disable Security Profiles                          = -
+* Enable Weak Host Send/Recieve                      = -
+* Enhance Connection Stability                       = +
+* Improve Network Packet Acknowlegdement             = +
+* Optimize IPv6 Address Handeling                    = -
+* Optimize MTU Size                                  = +
+* Optimize Neighbor Cache                            = +
+* Optimize Offloading Features                       = +
+* Optimize Packet Coalescing                         = +
+* Optimize Winsock Buffer Behaviour                  = +
+* Set Stabilize Network Routing                      = +
+* Disable Heuristics                                 = +
+* Optimize MPP                                       = +
 
 ----
 
@@ -345,8 +345,8 @@ Adapter Tuner
 
 Pick what applies for your system:
 
-Optimize WiFi Adapter                              = -
-Optimize Ethernet Adapter                          = +
+* Optimize WiFi Adapter                              = -
+* Optimize Ethernet Adapter                          = +
 
 
 -----
@@ -357,8 +357,8 @@ Optimize Ethernet Adapter                          = +
 
 Pick what applies for your system:
 
-Normal Mode                                        = -
-Ultra Low Bufferbloat                              = +
+* Normal Mode                                        = -
+* Ultra Low Bufferbloat                              = +
 
 #### Network Priority
 
@@ -369,47 +369,48 @@ You can toggle the on/off button to add a game for a more stable network connect
 #### Devices
 
 -----
-Ultra Low Bufferbloat                              = +
-Disable Communication Ports                        = -
-Disable Eusa Programmable Interrupt Controller     = +
-Disable High Precision Event Timer                 = -
-Diable Microsoft Gs Wavetable Synth                = -
-Disable Microsoft Hyper-v infrastructure Driver    = -
-Disable Remote Desktop Device Redirector Bus       = +
-Disable Serial Parts                               = +
+* Ultra Low Bufferbloat                              = +
+* Disable Communication Ports                        = -
+* Disable Eusa Programmable Interrupt Controller     = +
+* Disable High Precision Event Timer                 = -
+* Disable Microsoft Gs Wavetable Synth                = -
+* Disable Microsoft Hyper-v infrastructure Driver    = -
+* Disable Remote Desktop Device Redirector Bus       = +
+* Disable Serial Parts                               = +
 -----
 
 #### MSI Mode
 
 -----
-GPU                                                = +
-High Definition Audio Controllers                  = +
-Network Adapter                                    = +
-NVMe                                               = +
-SATA                                               = -
-USB Controller                                     = +
+* GPU                                                = +
+* High Definition Audio Controllers                  = +
+* Network Adapter                                    = +
+* NVMe                                               = +
+* SATA                                               = -
+* USB Controller                                     = +
 -----
 
 #### Security
 
 -----
-Allow Dynamic Code                                 = -
-Disable Bottomup/highentropy ASLR                  = -
-Disable Control Flow Guard (cfg)                   = -
-Disable Core Isolation (memory integrity)          = -
-Disable Extension Point isolation                  = -
-Disable Fault Tolerant Heap                        = -
-Disable Forcelocateimages                          = -
-Disable Kernel Stack Randomization                 = -
-Disable Nonsystem Fonts                            = -
-Disable ROP Mitigations                            = -
-Disable Sehop                                      = -
-Disable Smartscreen Filter                         = -
-Disable Smbv1 & SMB Signing                        = -
-Disable Stricthandle Checks                        = -
-Disable Uac                                        = -
-Disable Win32k System Call Disable                 = -
-Virtualization-based Security (vbs)                = -
+
+* Allow Dynamic Code                                 = -
+* Disable Bottomup/highentropy ASLR                  = -
+* Disable Control Flow Guard (cfg)                   = -
+* Disable Core Isolation (memory integrity)          = -
+* Disable Extension Point isolation                  = -
+* Disable Fault Tolerant Heap                        = -
+* Disable Forcelocateimages                          = -
+* Disable Kernel Stack Randomization                 = -
+* Disable Nonsystem Fonts                            = -
+* Disable ROP Mitigations                            = -
+* Disable Sehop                                      = -
+* Disable Smartscreen Filter                         = -
+* Disable Smbv1 & SMB Signing                        = -
+* Disable Stricthandle Checks                        = -
+* Disable Uac                                        = -
+* Disable Win32k System Call Disable                 = -
+* Virtualization-based Security (vbs)                = -
 
 -----
 
