@@ -1,15 +1,31 @@
 # Optimize Windows 11
 
-Optimized system to get the best results:
+Optimized system to get the best results (with the least amount of tweaks):
 
-* CPU Temps Goal: ~70c
-* GPU Temps Goal: ~70c
+* Better 1% lows (stutter)
+* Better frame consistency
+* Better input latency
 * Debloated as many 'uneccessary' apps & background images
 * Without breaking functionality for: Gaming & Cybersecurity
+* More FPS if possible
 
 # Warning/Disclaimer
 
 All the changes & downloads done by you to the software & hardware is done at your own risk. Restart whenever you do apply changes to should require a restart of the Windows Operating System.
+
+#### Under (heavy) load
+
+Test on maximum settings (Cinematic , V-Sync On, Ray Tracing, Shadows, Volumetric fog and Lighting) with a game that is demanding: Crimson Desert.
+
+* Max CPU Temps: < 90°c
+* Max GPU Temps: < 85°C
+
+#### Idle
+
+* Ideal CPU Temps Goal: ~70°c
+* Ideal GPU Temps Goal: ~70°c
+* Memory:               20%
+* CPU:                  Minimum
 
 ## Dependancies
 
@@ -86,24 +102,154 @@ minius [-] = toggled off in the app
 
 ### General
 
+#### Core
+
 Generic settings that you can toggle on and off to decrease background processes to optimize your Windows instance. Do note that it may break certain services.
+----
+* Disable All Notification                           = -
+* Disable Animations                                 = +
+* Disable Bluetooth Services                         = +
+* Diable Driver Searching                            = -
+* Disable Exeprimental Features                      = +
+* Disable Gamedvr                                    = +
+* Disable Microsoft Edge                             = +
+* Disable Scheduled Maintenance                      = +
+* Disable Search Indexing                            = +
+* Disable Start up Delay for Apps                    = +
+* Enable Game Mode                                   = +
+* Optimize Hung Apps                                 = +
+* Optimize Visual Settings                           = -
+* Optimize Windows Search                            = -
+* Set Windows 32 Priority Seperation                 = Pick one that suits your need and do your research
+* Configure Tsync Policy                             = Pick one that suits your need and do your research
+* Disable Hypervisor                                 = -
+* Disable Scheduled Tasks                            = -
+* Remove AI intergration in Windows                  = +
+* Tweak Latency Tolerance                            = +
+  
 
-
-
-* Disable All Notification    = -
-* Disable Animations          = +
-* Disable Bluetooth Services  = +
 ---- 
 
-#### Core
+#### Powerplan
+
+----
+* Disable All Power Telemetry                        = +
+* Diable Energy Estamation                           = +
+* Disable Fast Startup                               = +
+* Disable Hibernation                                = +
+* Disable Hybrid Sleep                               = -
+* Disable Fast Startup                               = +
+* Disable Sleep Timeout                              = +
+* Disable Standby                                    = +
+* Disable Powersaving                                = +
+* Optimize S3 Sleepstates                            = +
+* Set Timer Resolution                               = Let the app optimize the timing
+
+----
+
 
 #### Privacy
 
+----
+This is personal preference adjust to your liking
+----
+
 #### QOL
+
+----
+This is personal preference adjust to your liking
+----
 
 #### Apps
 
+----
+This is personal preference adjust to your liking
+----
+
 #### Powerplan
+
+----
+EXM Premium Laptop Powerplan                       = Applied
+----
+
+### Hardware
+
+#### GPU
+
+----
+* Advanced NVIDIA GPU Driver Installer             = !!!Don't Debloat!!!
+* EXM Laptop Nvidia Profile                        = Applied
+* EXM Desktop Nvidia Profile                       = Not Applied
+* Disable Geforce Driver Update                    = -
+* Disable HDCP                                     = +
+* Disable Nvidia Disable Logging                   = +
+* Disable Nvidia DMA Remapping                     = +
+* Disable Nvidia Uvm                               = -
+* Force Contigous Memory Allocation                = +
+* Optimize GPU Idle Thresholds                     = +
+* Optimize Memoery Latency Settings                = +
+* Optimize Nvidia Flip & VRR                       = +
+* Optimize Nvidia Fame Scheduling                  = +
+* Optimize Nvidia Geforce Experience Telemetery    = -
+* Disable Nvidia Aspm                              = -
+* Disable Nvidia Display Power Saving              = +
+* Disable Nvidia ECC                               = -
+* Disable Nvidia Gc5 Caching                       = +
+* Disable Nvidia Misc Power                        = -
+* Disable Nvidia Thermal Throttle                  = -
+* Disable TCC                                      = -
+* Force P0-State                                   = -
+* Keep Nvidia Dram Active                          = +
+* Optimize Nvidia Acpi & D3                        = +
+* Optimize Nvidia Bus Clocks                       = +
+* Optimize Nvidia Elpg                             = +
+* Optimize Nvidia Engine Clocks                    = +
+* Optimize Nvidia Gc6 Ilde                         = -
+* Optimize Nvidia Interrupts                       = -
+* Optimize Nvidia PCI Latency Control              = +
+* Optimzie Nvidia Power Features                   = -
+* Reduce Nvidia Polling Latency                    = +
+* Set Unrestricted Clock Policy                    = +
+* Streamline Nvidia Watchdog                       = +
+* Tune Nvidia Low-Power                            = -
+* Unlock Nvidia Perf Limits                        = +
+-----
+
+#### CPU
+
+----
+
+* Disable Basic C-states                           = -
+* Disable Coalescable Timer                        = -
+* Disable CPU Core Parking                         = -
+* Disable CPU Power Throttling                     = -
+* Disable Modern Standby                           = -
+* Set Energy Performance Preference                = -
+* Set Minimum And Maximum Processor State          = -
+* Disable Eventprocessor                           = +
+* Set Kernel Worker Threads                        = +
+* Set Scheduling Reserve                           = +
+* Delete Inter Microcode                           = Applied
+
+#### RAM
+
+-----
+* Clear Page File At Shutdown                      = +
+* Disable Memory Compression                       = +
+* Disable Prefetcher                               = +
+* Disable RAM Diagnostics                          = +
+* Enable Superfetch                                = +
+* Optimize And Group Svchost                       = +
+* Disable Diagnostic Execution On RAM Erros        = +
+* Disable Kernel Paging Executive                  = +
+* Disable Page Combining                           = +
+* Disable TRacking Of Memory Diagnostics History   = +
+-----
+
+
+#### Peripherals
+
+#### Storage
 
 UVM Nvidea
 
