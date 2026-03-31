@@ -9,7 +9,7 @@ Optimized system to get the best results:
 
 # Warning/Disclaimer
 
-All the changes & downloads done be you to the software & hardware is done at your own risk.
+All the changes & downloads done by you to the software & hardware is done at your own risk. Restart whenever you do apply changes to should require a restart of the Windows Operating System.
 
 ## Dependancies
 
@@ -25,6 +25,8 @@ All the changes & downloads done be you to the software & hardware is done at yo
 ### Software
 
 * Using Windows 11 25H2
+* Lenovo Windows Image
+* Lenovo Vantage
 * EXM app
 * MSI afterburner
 * RivaTuner
@@ -53,6 +55,8 @@ Installed Windows 11 23H2 from the image provided by Lenovo. Lenovo uses custom 
 * On the "Ready to install" page, ensure that "Keep personal files and apps" is checked.
 * Click "Install" and follow the prompts.
 * Windows 11 will restart your device several times and lead you to the lock screen. Depending on the          options you set, it will keep all your files, apps, and user accounts.
+
+### Dependancies hyperlinks
 
 * Lenovo Windows Image:  https://support.lenovo.com/us/en/solutions/ht103653
 
