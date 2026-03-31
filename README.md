@@ -320,9 +320,9 @@ Tweaks
 
 -----
 
-* Disable Automatic TCP Adjustment                   = +
-* Disable IPv6                                       = +
-* Disable Ipv6 Transistion Services                  = +
+* Disable Automatic TCP Adjustment                   = -
+* Disable IPv6                                       = -
+* Disable Ipv6 Transistion Services                  = -
 * Disable Security Profiles                          = -
 * Enable Weak Host Send/Recieve                      = -
 * Enhance Connection Stability                       = +
@@ -330,12 +330,12 @@ Tweaks
 * Optimize IPv6 Address Handeling                    = -
 * Optimize MTU Size                                  = +
 * Optimize Neighbor Cache                            = +
-* Optimize Offloading Features                       = +
+* Optimize Offloading Features                       = -
 * Optimize Packet Coalescing                         = +
 * Optimize Winsock Buffer Behaviour                  = +
 * Set Stabilize Network Routing                      = +
-* Disable Heuristics                                 = +
-* Optimize MPP                                       = +
+* Disable Heuristics                                 = -
+* Optimize MPP                                       = -
 
 ----
 
