@@ -243,13 +243,175 @@ EXM Premium Laptop Powerplan                       = Applied
 * Disable Diagnostic Execution On RAM Erros        = +
 * Disable Kernel Paging Executive                  = +
 * Disable Page Combining                           = +
-* Disable TRacking Of Memory Diagnostics History   = +
+* Disable Tracking Of Memory Diagnostics History   = +
 -----
 
 
 #### Peripherals
 
+#### Keyboard and Mouse
+-----
+* Disable Idle and sleep states                    = -
+* Disable Mouse Acceleration                       = -
+* Disable Sticky Keys                              = -
+* Disable Toggle Keys                              = -
+* Enable 1:1 Pixel Mouse Movement                  = -
+* Reduce Keyboard Repeat Delay & Rate              = -
+-----
+
+#### USB
+-----
+* Apply a custom USB Overclocking Driver           = -
+* Disable USB Selective Suspend                    = +
+* Set Debug Poll interval                          = +
+* Disable all hidden USB Power Saving Functions    = +
+* Optimize USB Ports & Drivers for Keyboard & Mouse= Applied
+-----
+
 #### Storage
+
+-----
+* Disable DIPM Parking                             = +
+* Disable HDD Parking                              = +
+* Disable HIPM Parking                             = +
+* Disable SSD Powersaving                          = +
+* Disable Write Cache Buffer Flushing              = +
+* Optimise SSD Sleep                               = +
+* Disable I/O latencycap                           = +
+* Disable NVMe Idle Power States                   = +
+* Disable Storage Idle Timeout                     = +
+* Optimize NFTS Settings                           = +
+* TRIM & Defragment Optimize Drives                = +
+-----
+
+#### Debloat
+
+#### System Cleaner
+
+-----
+Do a system clean up as you see fit
+-----
+
+#### Services
+
+-----
+* Basic                                            = -
+* Advanced                                         = +
+-----
+
+#### Autoruns
+
+-----
+Do check what services you can and cannot disable
+-----
+
+
+#### Autoruns
+
+-----
+Uninstall any apps you see fit and know what will break if you do uninstall them
+-----
+
+#### Network
+
+-----
+
+Tweaks
+
+-----
+
+Disable Automatic TCP Adjustment                   = +
+Disable IPv6                                       = +
+Disable Ipv6 Transistion Services                  = +
+Disable Security Profiles                          = -
+Enable Weak Host Send/Recieve                      = -
+Enhance Connection Stability                       = +
+Improve Network Packet Acknowlegdement             = +
+Optimize IPv6 Address Handeling                    = -
+Optimize MTU Size                                  = +
+Optimize Neighbor Cache                            = +
+Optimize Offloading Features                       = +
+Optimize Packet Coalescing                         = +
+Optimize Winsock Buffer Behaviour                  = +
+Set Stabilize Network Routing                      = +
+Disable Heuristics                                 = +
+Optimize MPP                                       = +
+
+----
+
+Adapter Tuner
+
+----
+
+Pick what applies for your system:
+
+Optimize WiFi Adapter                              = -
+Optimize Ethernet Adapter                          = +
+
+
+-----
+
+#### BufferBloat
+
+-----
+
+Pick what applies for your system:
+
+Normal Mode                                        = -
+Ultra Low Bufferbloat                              = +
+
+#### Network Priority
+
+You can toggle the on/off button to add a game for a more stable network connection
+
+#### Advanced
+
+#### Devices
+
+-----
+Ultra Low Bufferbloat                              = +
+Disable Communication Ports                        = -
+Disable Eusa Programmable Interrupt Controller     = +
+Disable High Precision Event Timer                 = -
+Diable Microsoft Gs Wavetable Synth                = -
+Disable Microsoft Hyper-v infrastructure Driver    = -
+Disable Remote Desktop Device Redirector Bus       = +
+Disable Serial Parts                               = +
+-----
+
+#### MSI Mode
+
+-----
+GPU                                                = +
+High Definition Audio Controllers                  = +
+Network Adapter                                    = +
+NVMe                                               = +
+SATA                                               = -
+USB Controller                                     = +
+-----
+
+#### Security
+
+-----
+Allow Dynamic Code                                 = -
+Disable Bottomup/highentropy ASLR                  = -
+Disable Control Flow Guard (cfg)                   = -
+Disable Core Isolation (memory integrity)          = -
+Disable Extension Point isolation                  = -
+Disable Fault Tolerant Heap                        = -
+Disable Forcelocateimages                          = -
+Disable Kernel Stack Randomization                 = -
+Disable Nonsystem Fonts                            = -
+Disable ROP Mitigations                            = -
+Disable Sehop                                      = -
+Disable Smartscreen Filter                         = -
+Disable Smbv1 & SMB Signing                        = -
+Disable Stricthandle Checks                        = -
+Disable Uac                                        = -
+Disable Win32k System Call Disable                 = -
+Virtualization-based Security (vbs)                = -
+
+-----
 
 UVM Nvidea
 
