@@ -258,8 +258,31 @@ https://www.kingston.com/en/blog/gaming/windows-11-pc-performance-features-for-g
 To maximize system resources for gaming and heavy workloads, you don't necessarily need to "uninstall" Microsoft Edge (which can be risky since it’s deeply integrated into Windows 11). Instead, you can effectively neutralize its background resource consumption.
 
   
-* Disable Scheduled Maintenance                      = +
+* Disable Scheduled Maintenance                      = -
+
+Scheduled Maintenance in Windows 11 is a built-in feature designed to run tasks like software updates, security scans, and system diagnostics when you aren't using your PC. While helpful for the average user, these tasks can trigger during heavy workloads or gaming sessions, causing CPU spikes, disk latency, and "micro-stutters."
+
+To prevent Windows from automatically starting maintenance entirely, you can use the Registry Editor.
+
+    Note: Always back up your registry before making changes.
+
+    Press Win + R, type regedit, and hit Enter.
+
+    Navigate to: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance
+
+    Right-click in the right pane, select New > DWORD (32-bit) Value.
+
+    Name it MaintenanceDisabled.
+
+    Double-click it and set the Value data to 1.
+
+    Restart your computer.
+
+* 
 * Disable Search Indexing                            = +
+
+
+  
 * Disable Start up Delay for Apps                    = +
 * Enable Game Mode                                   = +
 * Optimize Hung Apps                                 = +
