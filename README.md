@@ -18,6 +18,7 @@ https://generalistprogrammer.com/tutorials/game-optimization-complete-performanc
 * Restart your system when you change settings (Cap Frame X; EXM App; Windows Settings; Overlays)
 * Disable any overlays (Discord; Steam; HWiNFO etc.)
 * Cap Frame X requires you to click the process in the GUI to start capturing the metrics
+* Cap Frame X seems unreliable to test metrics (could be software/hardware that is causing the issues)
 * Make sure to run a effective system (disable as many processes without breaking the system)
 * Leave security features on!
 
