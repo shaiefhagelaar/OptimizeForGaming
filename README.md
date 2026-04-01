@@ -13,6 +13,14 @@ Quick read up on different aspects to optimize your system for gaming:
 
 https://generalistprogrammer.com/tutorials/game-optimization-complete-performance-guide-2025
 
+## To do list
+
+* Uninstall Cap Frame X
+* Fix RTTS overlay for MSI Afterburner
+* Baseline tests (just to be safe)
+* Test each setting/toggle
+* Describe each setting/toggle
+
 ## Notes
 
 * Restart your system when you change settings (Cap Frame X; EXM App; Windows Settings; Overlays)
