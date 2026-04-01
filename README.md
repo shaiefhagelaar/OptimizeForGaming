@@ -159,8 +159,61 @@ https://windowsforum.com/threads/how-to-disable-bluetooth-in-windows-11-quick-se
 * Disable Driver Searching                           = -
 
 
+Removing hidden ghost drivers is a legitimate and effective optimization for Windows 11 systems under heavy load. The biggest wins come from old GPU drivers, old network drivers, and USB device bloat. Always create a restore point first, never remove entries under the Non-Plug and Play Drivers node, and use DDU when switching GPU brands for the cleanest possible result.
+
+https://windowsforum.com/threads/the-ultimate-guide-to-removing-old-hidden-device-drivers-in-windows-11.360680/
+
+DPC Latency increase: Ghost drivers can execute Deferred Procedure Calls, adding latency spikes — devastating for frame pacing and real-time audio
+
+https://windowsforum.com/threads/latencymon-guide-identify-driver-latency-causing-stutters-in-windows.386112/
+
+IRQ / Resource conflicts: Old entries may reserve interrupt lines or memory ranges, starving your active GPU or NVMe controller
+
+https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/checking-for-resource-conflicts
+
+Non-paged pool memory waste: Some residual drivers allocate kernel memory that is permanently locked in RAM
+
+https://techcommunity.microsoft.com/blog/askperf/memory-management---understanding-pool-resources/372321
+
+Driver conflicts: A previous GPU driver (e.g., from an old NVIDIA card) can clash with your current one (e.g., AMD), causing stutters, crashes, or BSODs. Driver conflicts can lead to system instability, hardware malfunctions, and crashes. When multiple drivers interfere with each other, devices may stop working properly. This guide provides step-by-step solutions to fix driver conflicts effectively.
+
+https://tech-now.io/en/it-support-issues/software/how-to-resolve-driver-conflicts-step-by-step-guide-to-fixing-driver-issues
+
+https://learn.microsoft.com/en-us/answers/questions/4037530/how-to-prevent-automatic-windows-11-updates-from-o
+
 -----
-* Disable Exeprimental Features                      = +
+* Disable Experimental Features                      = +
+
+In Windows 11, "experimental features" typically refer to hidden components or features being tested in the Windows Insider Program. For gaming and heavy workloads, these features can cause instability, higher latency, or "stuttering" because they are not yet optimized for general hardware.
+
+1. Exit the Windows Insider Program
+
+The most direct way "experimental" features end up on your system is through the Insider Program. If you are on a Dev or Canary channel, you are effectively a beta tester for unoptimized code.
+
+https://www.microsoft.com/en-us/windowsinsider/leave-program
+
+2. Disable "Experimental" Security Features (VBS/HVCI)
+
+While not labeled "experimental" in the menu, Virtualization-Based Security (VBS) and Memory Integrity are often cited by hardware experts as the biggest performance drains (up to 25% FPS loss in some scenarios). These features create a virtualized environment that can interfere with high-speed CPU scheduling.
+
+https://windowsforum.com/threads/windows-11-gaming-tuning-guide-2026-safe-consistent-performance.401517/
+   
+3. Manage Hidden Features with ViVeTool
+
+Advanced users often use a third-party, open-source tool called ViVeTool to manually disable specific "Feature IDs" that Microsoft may have enabled silently on your system for A/B testing.
+
+https://4sysops.com/archives/vivetool-enable-hidden-windows-features/#:~:text=ViVeTool%20is%20an%20open%2Dsource,immediately%20visible%20to%20all%20users.
+
+4. Optimize "Heavy Workload" Settings
+
+Instead of hunting for hidden experiments, ensure the following High Performance features are correctly configured to prevent Windows from "experimenting" with your power management.
+
+https://windowsforum.com/threads/windows-11-gaming-tuning-guide-2026-safe-consistent-performance.401517/#:~:text=Microsoft%20itself%20has%20acknowledged%20that,the%20security%20trade%2Doffs).
+
+To keep your system stable for work, the best practice is to stay on the Windows 11 Home/Pro "Stable" branch and avoid the Insider Program entirely.
+
+-----
+* 
 * Disable Gamedvr                                    = +
 * Disable Microsoft Edge                             = +
 * Disable Scheduled Maintenance                      = +
