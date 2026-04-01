@@ -9,6 +9,10 @@ Optimized system to get the best results (with the least amount of tweaks):
 * Without breaking functionality for: Gaming & Cybersecurity
 * More FPS if possible
 
+Quick read up on different aspects to optimize your system for gaming:
+
+https://generalistprogrammer.com/tutorials/game-optimization-complete-performance-guide-2025
+
 # Warning/Disclaimer
 
 All the changes & downloads done by you to the software & hardware is done at your own risk. Restart whenever you do apply changes to should require a restart of the Windows Operating System.
