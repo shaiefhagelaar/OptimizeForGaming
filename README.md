@@ -13,6 +13,14 @@ Quick read up on different aspects to optimize your system for gaming:
 
 https://generalistprogrammer.com/tutorials/game-optimization-complete-performance-guide-2025
 
+## Notes
+
+* Restart your system when you change settings (Cap Frame X; EXM App; Windows Settings; Overlays)
+* Disable any overlays (Discord; Steam; HWiNFO etc.)
+* Cap Frame X requires you to click the process in the GUI to start capturing the metrics
+* Make sure to run a effective system (disable as many processes without breaking the system)
+* Leave security features on!
+
 # Warning/Disclaimer
 
 All the changes & downloads done by you to the software & hardware is done at your own risk. Restart whenever you do apply changes to should require a restart of the Windows Operating System.
@@ -59,7 +67,7 @@ Test on maximum settings (Cinematic , V-Sync On, Ray Tracing, Shadows, Volumetri
 
 ## Start
 
-Start with a fresh/clean Windows install from the official Lenovo website. Don't make an local account since it will install Windows 11 22H2 which isn't supported since 10/2025.  Install the dependancies.
+Start with a fresh/clean Windows install from the official Lenovo website. Don't make an local account since it will install Windows 11 22H2 which isn't supported since 10/2025. Install the dependancies.
 
 #### Windows
 
