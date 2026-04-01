@@ -131,6 +131,8 @@ https://www.capframex.com/blog/post/Explanation%20of%20different%20performance%2
 * Frametime Average (ms) 
 * Frametime 'Graph'
 * CPU Package (°C)
+* CPU Total (%)
+* RAM Usage (%)
 
 ### General
 
