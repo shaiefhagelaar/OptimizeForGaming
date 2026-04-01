@@ -213,8 +213,46 @@ https://windowsforum.com/threads/windows-11-gaming-tuning-guide-2026-safe-consis
 To keep your system stable for work, the best practice is to stay on the Windows 11 Home/Pro "Stable" branch and avoid the Insider Program entirely.
 
 -----
-* 
 * Disable Gamedvr                                    = +
+
+Disabling Game DVR in Windows 11 is a common step for users looking to reclaim system resources, as the feature constantly monitors and records your screen in the background to enable "instant replays." This background recording consumes CPU cycles, GPU encoding power, and disk I/O, which can cause micro-stutters or reduced FPS in heavy workloads.
+
+Why this matters for Performance
+
+    Reduced Overhead: Disabling the "Background Recording" feature frees up your GPU's hardware encoder (NVENC/AMF), which is better utilized by your actual game or professional rendering software.
+
+    Reduced Input Lag: By stopping the OS from constantly "hooking" into your display output to capture frames, many users report a "snappier" feel and lower system latency.
+
+    Disk Activity: Game DVR writes temporary video files to your drive constantly. Disabling it reduces unnecessary SSD wear and I/O saturation during heavy file transfers.
+
+The Registry Edit (Full Disable)
+
+If you want to ensure the recording engine (Game DVR) is completely inactive, you can use the Registry Editor.
+
+    Note: Always back up your registry before making changes.
+
+    Press Win + R, type regedit, and hit Enter.
+
+    Navigate to: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR
+
+    Find AppCaptureEnabled. Double-click it and set the value to 0.
+
+    If it doesn't exist, right-click > New > DWORD (32-bit) Value, name it exactly that, and set it to 0.
+
+    Navigate to: HKEY_CURRENT_USER\System\GameConfigStore
+
+    Find GameDVR_Enabled. Double-click it and set the value to 0.
+
+    Restart your PC for changes to take effect.
+
+A quick tip: If you are disabling this for gaming, ensure "Game Mode" (Settings > Gaming > Game Mode) is actually ON. While it sounds counter-intuitive, in Windows 11, Game Mode prioritizes your game’s process and prevents Windows Update from installing drivers in the background while you work or play.
+
+https://iqondigital.com/learn/pc-optimization/game-bar-dvr
+
+https://www.kingston.com/en/blog/gaming/windows-11-pc-performance-features-for-gamers#:~:text=Windows%2011's%20Game%20Mode%2C%20which,tasks%20like%20updates%20and%20notifications.
+-----
+
+* 
 * Disable Microsoft Edge                             = +
 * Disable Scheduled Maintenance                      = +
 * Disable Search Indexing                            = +
