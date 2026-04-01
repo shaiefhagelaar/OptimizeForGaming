@@ -253,7 +253,11 @@ https://www.kingston.com/en/blog/gaming/windows-11-pc-performance-features-for-g
 -----
 
 * 
-* Disable Microsoft Edge                             = +
+# Disable Microsoft Edge                             = +
+
+To maximize system resources for gaming and heavy workloads, you don't necessarily need to "uninstall" Microsoft Edge (which can be risky since it’s deeply integrated into Windows 11). Instead, you can effectively neutralize its background resource consumption.
+
+  
 * Disable Scheduled Maintenance                      = +
 * Disable Search Indexing                            = +
 * Disable Start up Delay for Apps                    = +
