@@ -108,6 +108,12 @@ plus [+] = toggled on in the app
 
 minius [-] = toggled off in the app
 
+## Cap Frame X
+
+If you have ever looked at game benchmarks on the internet, you might have come across all these terms. But what exactly is hidden behind them is probably not clear to everyone and that's why we want to provide some clarity.Explanation Metrics:
+
+https://www.capframex.com/blog/post/Explanation%20of%20different%20performance%20metrics
+
 ### General
 
 #### Core
