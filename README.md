@@ -27,7 +27,7 @@ All the changes & downloads done by you to the software & hardware is done at yo
 
 #### Under (heavy) load
 
-Test on maximum settings (Cinematic , V-Sync On, Ray Tracing, Shadows, Volumetric fog and Lighting) with a game that is demanding: Crimson Desert.
+Test on maximum settings (Cinematic , V-Sync On, Ray Tracing, Shadows, Volumetric fog and Lighting) with a game that is demanding: Crimson Desert (uses Black Space Engine see : https://thegameswiki.com/crimson-desert/wiki/blackspace-engine).
 
 * Max CPU Temps: < 90°c
 * Max GPU Temps: < 85°C
