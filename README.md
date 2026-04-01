@@ -118,7 +118,7 @@ If you have ever looked at game benchmarks on the internet, you might have come 
 
 https://www.capframex.com/blog/post/Explanation%20of%20different%20performance%20metrics
 
-Also make sure to downlaod & install the Beta version listed on their github releases page (at the time of writing beta_1.8.4)
+Also make sure to download & install the Beta version listed on their github releases page (at the time of writing beta_1.8.4)
 
 #### Metrics used for Cap Frame X
 
