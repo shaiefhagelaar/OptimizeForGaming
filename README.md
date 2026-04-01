@@ -46,8 +46,12 @@ Test on maximum settings (Cinematic , V-Sync On, Ray Tracing, Shadows, Volumetri
 * EXM app
 * MSI afterburner
 * RivaTuner
+* Cap Frame X
+* .Net Framework 9.0.14
 * Nvidea App
 * Nvidea Control panel
+* Cap Frame X
+* .Net Framework 9.0.14
 
 ## Start
 
@@ -70,25 +74,29 @@ Installed Windows 11 23H2 from the image provided by Lenovo. Lenovo uses custom 
 * Wait for the setup program to check for available free space.
 * On the "Ready to install" page, ensure that "Keep personal files and apps" is checked.
 * Click "Install" and follow the prompts.
-* Windows 11 will restart your device several times and lead you to the lock screen. Depending on the          options you set, it will keep all your files, apps, and user accounts.
+* Windows 11 will restart your device several times and lead you to the lock screen. Depending on the options you set, it will keep all your files, apps, and user accounts.
 
 ### Dependancies hyperlinks
 
-* Lenovo Windows Image:  https://support.lenovo.com/us/en/solutions/ht103653
+* Lenovo Windows Image      https://support.lenovo.com/us/en/solutions/ht103653
 
-* Lenovo Vantage:        https://www.lenovo.com/us/en/software/vantage
+* Lenovo Vantage            https://www.lenovo.com/us/en/software/vantage
 
-* HWiNFO:                https://www.hwinfo.com/
+* HWiNFO                    https://www.hwinfo.com/
 
-* EXM app:               https://exmtweaks.com/en-eu
+* EXM app                   https://exmtweaks.com/en-eu
 
-* MSI Afterburner:       https://www.msi.com/Landing/afterburner/graphics-cards
+* MSI Afterburner           https://www.msi.com/Landing/afterburner/graphics-cards
 
-* Rivatuner:             Mark the option checked during installation of MSI Afterburner
+* Rivatuner                 Mark the option checked during installation of MSI Afterburner
 
-* Nvidea Drivers:        https://www.nvidia.com/en-us/geforce/drivers/
+* Nvidea Drivers            https://www.nvidia.com/en-us/geforce/drivers/
 
-* Nvidea Control Panel:  Should be installed on your device
+* Nvidea Control Panel      Should be installed on your device
+
+* Cap Frame X               https://www.capframex.com/
+                 
+* .Net Framework 9.0.14     https://dotnet.microsoft.com/en-us/download/dotnet/9.0
 
 ## EXM App
 
