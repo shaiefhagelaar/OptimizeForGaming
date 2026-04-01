@@ -118,6 +118,20 @@ If you have ever looked at game benchmarks on the internet, you might have come 
 
 https://www.capframex.com/blog/post/Explanation%20of%20different%20performance%20metrics
 
+#### Metrics used for Cap Frame X
+
+* GPU Core (MHz)
+* GPU Memory (MHz)
+* GPU Core (%)
+* GPU Hot Spot (°C)
+* GPU Memory (%)
+* GPU Memory Junction (°C)
+* GPU Active Time Average (ms)
+* Framerate (FPS)
+* Frametime Average (ms) 
+* Frametime 'Graph'
+* CPU Package (°C)
+
 ### General
 
 #### Core
