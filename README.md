@@ -107,9 +107,59 @@ minius [-] = toggled off in the app
 Generic settings that you can toggle on and off to decrease background processes to optimize your Windows instance. Do note that it may break certain services.
 ----
 * Disable All Notification                           = -
+
+https://windowsreport.com/windows-11-disable-notifications/
+
+Risks and trade‑offs — be deliberate​
+Silencing reminders improves concentration, but be deliberate about which signals you block:
+
+    Keep alarms and trusted calendar reminders enabled if you rely on them for time‑critical tasks.
+    Be careful disabling Windows Security notifications — they often include actionable security warnings you shouldn’t miss.
+    For professional or managed devices, make changes through formal admin channels (GPO/Intune) to avoid configuration drift and support issues.
+
+When in doubt, favor scheduled Focus sessions and per‑app controls — they balance quiet with safety.
+Final analysis and best practices​
+Windows 11’s notification architecture gives you granular control — and Microsoft continues to layer new engagement surfaces into thch is a pragmatic one:
+
+    Use Focus Sessions / Do Not Disturb for temporary deep work; schedule them so quiet becomes automatic.
+    Disable system tips and Cloud Content suggestions if you want to stop onboarding prompts and product nudges.
+    Triage apps one by one rather than using the master kill switch.
+    For privacy/ads, disable Advertising ID and Tailored experiences.
+    For organizations, apply Cloud Content Group Policy values to enforce a consistent user experience, but test across SKUs and builds because behavior can vary.
+-----  
 * Disable Animations                                 = +
+
+How Disabling Animation Fits into Broader Performance Tweaks​
+Turning off animations should be viewed as one element in a toolkit for optimizing Windows 11. Other options—such as disabling transparency effects, pruning unnecessary background services, and tweaking visual settings—can yield further improvements in both perceived and real-world speed. For maximum benefit, users often combine multiple tweaks:
+
+    Disable Transparency: Turning off transparency effects (via Settings > Personalization > Colors) further reduces graphical overhead.
+    Background Apps: Managing which apps can run in the background (Settings > Privacy & Security > Background apps) can recover additional responsiveness, particularly on older PCs.
+    Startup Programs: Pruning the startup list ensures a leaner boot and less contention for RAM and CPU cycles.
+
+https://windowsforum.com/threads/boost-windows-11-performance-by-disabling-animations-for-snappier-user-experience.371135/
+
+No single tweak can overcome fundamental hardware bottlenecks, but a combination of settings—including disabling animations—can bridge much of the perceived speed gap between Windows 10 and its successor.
+Tweak	Effect	Where to Find
+Disable Animations	Faster UI, less visual lag	Accessibility > Visual Effects
+Turn Off Transparency	Reduces GPU load, boosts clarity	Personalization > Colors
+Manage Background Apps	Frees resources, slows drain	Privacy & Security > Background Apps
+Remove Startup Programs	Faster boot, more available RAM	Task Manager > Startup
+Adjust Power Settings	Maximizes performance potential	System > Power & battery
+----- 
 * Disable Bluetooth Services                         = +
-* Diable Driver Searching                            = -
+
+Security, battery life, and privacy: how much do you gain by disabling Bluetooth?​
+
+    Battery benefit: Disabling Bluetooth reduces background radio usage and can save battery on laptops and tablets. The exact amount varies by device, usage, and whether peripherals stay connected — a precise percentage change can't be universally guaranteed and depends on hardware and usage patterns (this claim is practical rather than precisely quantifiable without device‑specific testing). Flag: unverifiable as a single number.
+    Privacy and attack surface: Turning the radio off reduces the chance of unsolicited pairing requests and limits the local attack surface. That said, Wi‑Fi, USB, and other interfaces remain potential vectors; Bluetooth is just one part of an overall security strategy. Disabling Bluetooth is a pragmatic privacy step but not a complete security fix.
+    Troubleshooting benefit: Cutting the radio or disabling the driver is a reliable diagnostic tool. If the problem follows the device (works on phone, not on PC), disabling and re‑enabling or reinstalling drivers helps isolate whether the issue is OS, driver, or peripheral side.
+
+https://windowsforum.com/threads/how-to-disable-bluetooth-in-windows-11-quick-settings-to-services.387414/
+-----
+* Disable Driver Searching                           = -
+
+
+-----
 * Disable Exeprimental Features                      = +
 * Disable Gamedvr                                    = +
 * Disable Microsoft Edge                             = +
