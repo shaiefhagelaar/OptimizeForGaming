@@ -13,6 +13,10 @@ Quick read up on different aspects to optimize your system for gaming:
 
 https://generalistprogrammer.com/tutorials/game-optimization-complete-performance-guide-2025
 
+## Issues (Unresolved)
+
+* Windows DPC Watchdogs Violation (turned on settings in EXM App)
+
 ## To do list
 
 * Uninstall Cap Frame X
