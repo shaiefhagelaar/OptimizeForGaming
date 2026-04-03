@@ -343,20 +343,28 @@ To prevent Windows from automatically starting maintenance entirely, you can use
 
     Restart your computer.
 
-* 
+* Disable All Notification                           = -
+* Disable Animations                                 = +
+* Disable Bluetooth Services                         = +
+* Disable Driver Searching                           = -
+* Disable Experimental Features                      = +
+* Disable Gamedvr                                    = +   
+* Disable Scheduled Maintenance                      = -
 * Disable Search Indexing                            = +
-
-
-  
+* Disable Scheduled Maintenance                      = -
+* Disable Search Indexing                            = +  
 * Disable Start up Delay for Apps                    = +
+* Disable Transparency Effects                       = +
+* Disable Windows Updates                            = -
+* Disable Xbox Services                              = +
 * Enable Game Mode                                   = +
 * Optimize Hung Apps                                 = +
-* Optimize Visual Settings                           = -
-* Optimize Windows Search                            = -
-* Set Windows 32 Priority Seperation                 = Pick one that suits your need and do your research
-* Configure Tsync Policy                             = Pick one that suits your need and do your research
+* Optimize Visual Settings                           = +
+* Optimize Windows Search                            = +
+* Set Windows 32 Priority Seperation                 = (26 Hex) Pick one that suits your need and do your research
+* Configure Tsync Policy                             = (Legacy) Pick one that suits your need and do your research
 * Disable Hypervisor                                 = -
-* Disable Scheduled Tasks                            = -
+* Disable Scheduled Tasks                            = +
 * Remove AI intergration in Windows                  = +
 * Tweak Latency Tolerance                            = +
   
@@ -402,7 +410,9 @@ This is personal preference adjust to your liking
 #### Powerplan
 
 ----
-EXM Premium Laptop Powerplan                       = Applied
+
+EXM Premium Desktop Powerplan                      = + 
+Premium Laptop Powerplan                           = -
 ----
 
 ### Hardware
@@ -411,14 +421,14 @@ EXM Premium Laptop Powerplan                       = Applied
 
 ----
 * Advanced NVIDIA GPU Driver Installer             = !!!Don't Debloat!!!
-* EXM Laptop Nvidia Profile                        = Applied
-* EXM Desktop Nvidia Profile                       = Not Applied
+* EXM Laptop Nvidia Profile                        = Not Applied
+* EXM Desktop Nvidia Profile                       = Applied
 * Disable Geforce Driver Update                    = -
 * Disable HDCP                                     = +
-* Disable Nvidia Disable Logging                   = +
+* Disable Nvidia Disable Logging                   = -
 * Disable Nvidia DMA Remapping                     = +
 * Disable Nvidia Uvm                               = -
-* Force Contigous Memory Allocation                = +
+* Force Contigous Memory Allocation                = -
 * Optimize GPU Idle Thresholds                     = +
 * Optimize Memoery Latency Settings                = +
 * Optimize Nvidia Flip & VRR                       = +
@@ -426,11 +436,11 @@ EXM Premium Laptop Powerplan                       = Applied
 * Optimize Nvidia Geforce Experience Telemetery    = -
 * Disable Nvidia Aspm                              = -
 * Disable Nvidia Display Power Saving              = +
-* Disable Nvidia ECC                               = -
+* Disable Nvidia ECC                               = +
 * Disable Nvidia Gc5 Caching                       = +
-* Disable Nvidia Misc Power                        = -
+* Disable Nvidia Misc Power                        = +
 * Disable Nvidia Thermal Throttle                  = -
-* Disable TCC                                      = -
+* Disable TCC                                      = +
 * Force P0-State                                   = -
 * Keep Nvidia Dram Active                          = +
 * Optimize Nvidia Acpi & D3                        = +
@@ -452,8 +462,8 @@ EXM Premium Laptop Powerplan                       = Applied
 
 ----
 
-* Disable Basic C-states                           = -
-* Disable Coalescable Timer                        = -
+* Disable Basic C-states                           = +
+* Disable Coalescable Timer                        = +
 * Disable CPU Core Parking                         = -
 * Disable CPU Power Throttling                     = -
 * Disable Modern Standby                           = -
@@ -470,13 +480,13 @@ EXM Premium Laptop Powerplan                       = Applied
 * Clear Page File At Shutdown                      = +
 * Disable Memory Compression                       = +
 * Disable Prefetcher                               = +
-* Disable RAM Diagnostics                          = +
+* Disable RAM Diagnostics                          = -
 * Enable Superfetch                                = +
-* Optimize And Group Svchost                       = +
-* Disable Diagnostic Execution On RAM Erros        = +
+* Optimize And Group Svchost                       = -
+* Disable Diagnostic Execution On RAM Erros        = -
 * Disable Kernel Paging Executive                  = +
-* Disable Page Combining                           = +
-* Disable Tracking Of Memory Diagnostics History   = +
+* Disable Page Combining                           = -
+* Disable Tracking Of Memory Diagnostics History   = -
 -----
 
 
@@ -484,12 +494,13 @@ EXM Premium Laptop Powerplan                       = Applied
 
 #### Keyboard and Mouse
 -----
-* Disable Idle and sleep states                    = -
-* Disable Mouse Acceleration                       = -
-* Disable Sticky Keys                              = -
+* Disable Idle and sleep states                    = +
+* Disable Mouse Acceleration                       = +
+* Disable Sticky Keys                              = +
 * Disable Toggle Keys                              = -
-* Enable 1:1 Pixel Mouse Movement                  = -
-* Reduce Keyboard Repeat Delay & Rate              = -
+* Enable 1:1 Pixel Mouse Movement                  = +
+* Reduce Keyboard Repeat Delay & Rate              = +
+* Optimized for Mouse & Keyboard                   = +
 -----
 
 #### USB
@@ -504,15 +515,15 @@ EXM Premium Laptop Powerplan                       = Applied
 #### Storage
 
 -----
-* Disable DIPM Parking                             = +
-* Disable HDD Parking                              = +
-* Disable HIPM Parking                             = +
-* Disable SSD Powersaving                          = +
-* Disable Write Cache Buffer Flushing              = +
-* Optimise SSD Sleep                               = +
+* Disable DIPM Parking                             = -
+* Disable HDD Parking                              = -
+* Disable HIPM Parking                             = -
+* Disable SSD Powersaving                          = -
+* Disable Write Cache Buffer Flushing              = -
+* Optimise SSD Sleep                               = -
 * Disable I/O latencycap                           = +
-* Disable NVMe Idle Power States                   = +
-* Disable Storage Idle Timeout                     = +
+* Disable NVMe Idle Power States                   = -
+* Disable Storage Idle Timeout                     = -
 * Optimize NFTS Settings                           = +
 * TRIM & Defragment Optimize Drives                = +
 -----
@@ -564,8 +575,9 @@ Tweaks
 * Optimize MTU Size                                  = +
 * Optimize Neighbor Cache                            = +
 * Optimize Offloading Features                       = -
-* Optimize Packet Coalescing                         = +
+* Optimize Packet Coalescing                         = -
 * Optimize Winsock Buffer Behaviour                  = +
+* Reduce Network Background Interruptions            = +
 * Set Stabilize Network Routing                      = +
 * Disable Heuristics                                 = -
 * Optimize MPP                                       = -
@@ -602,14 +614,14 @@ You can toggle the on/off button to add a game for a more stable network connect
 #### Devices
 
 -----
-* Ultra Low Bufferbloat                              = +
+* Ultra Low Bufferbloat                              = -
 * Disable Communication Ports                        = -
-* Disable Eusa Programmable Interrupt Controller     = +
+* Disable Eusa Programmable Interrupt Controller     = -
 * Disable High Precision Event Timer                 = -
-* Disable Microsoft Gs Wavetable Synth                = -
+* Disable Microsoft Gs Wavetable Synth               = -
 * Disable Microsoft Hyper-v infrastructure Driver    = -
-* Disable Remote Desktop Device Redirector Bus       = +
-* Disable Serial Parts                               = +
+* Disable Remote Desktop Device Redirector Bus       = -
+* Disable Serial Ports                               = +
 -----
 
 #### MSI Mode
@@ -619,7 +631,7 @@ You can toggle the on/off button to add a game for a more stable network connect
 * High Definition Audio Controllers                  = +
 * Network Adapter                                    = +
 * NVMe                                               = +
-* SATA                                               = -
+* SATA                                               = +
 * USB Controller                                     = +
 -----
 
