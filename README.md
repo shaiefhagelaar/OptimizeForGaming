@@ -24,6 +24,7 @@ https://generalistprogrammer.com/tutorials/game-optimization-complete-performanc
 * Baseline tests (just to be safe)
 * Test each setting/toggle
 * Describe each setting/toggle
+* Managed Display Mode in Nvidia Control Panel missing
 
 ## Notes
 
@@ -39,6 +40,7 @@ https://generalistprogrammer.com/tutorials/game-optimization-complete-performanc
   
 * Make sure to run a effective system (disable as many processes without breaking the system)
 * Leave security features on!
+
 
 # Warning/Disclaimer
 
