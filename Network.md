@@ -1,18 +1,18 @@
-#### Network
+# Network
 
 -----
 
-Tweaks
+## Tweaks
 
 -----
 
     * Disable Automatic TCP Adjustment                   = -
 
-This refers to TCP Receive Window Auto-Tuning. Windows monitors bandwidth and latency to dynamically scale the receive window size for maximum throughput.
+This refers to TCP Receive Window Auto-Tuning. Windows monitors bandwidth and latency to dynamically scale the receive window size for maximum throughput
 
-Disabling this (netsh int tcp set global autotuninglevel=disabled) fixes compatibility with legacy routers that don't support RFC 1323, but it can severely limit speeds on modern high-speed networks.
+Disabling this (netsh int tcp set global autotuninglevel=disabled) fixes compatibility with legacy routers that don't support RFC 1323, but it can severely limit speeds on modern high-speed networks
 
-Known as Receive Window Auto-Tuning. Windows automatically adjusts the TCP receive buffer size based on bandwidth and latency. Disabling it (netsh int tcp set global autotuninglevel=disabled) limits the window to a fixed 64KB, which can prevent "throttling" in specific legacy environments but usually degrades performance on high-speed fiber connections.
+Known as Receive Window Auto-Tuning. Windows automatically adjusts the TCP receive buffer size based on bandwidth and latency. Disabling it (netsh int tcp set global autotuninglevel=disabled) limits the window to a fixed 64KB, which can prevent "throttling" in specific legacy environments but usually degrades performance on high-speed fiber connections
 
 https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/receive-window-auto-tuning-for-http
 
@@ -22,7 +22,7 @@ https://windowsforum.com/threads/mastering-tcp-ip-settings-in-windows-11-a-compl
 
     * Disable IPv6                                       = -
 
-The Internet Protocol version 6. Microsoft officially recommends not disabling IPv6. Many Windows components (like DirectAccess or HomeGroup) rely on it. Disabling it can cause slight delays in name resolution if the OS keeps trying to use a disabled stack.
+The Internet Protocol version 6. Microsoft officially recommends not disabling IPv6. Many Windows components (like DirectAccess or HomeGroup) rely on it. Disabling it can cause slight delays in name resolution if the OS keeps trying to use a disabled stack
 
 https://learn.microsoft.com/en-us/answers/questions/5722909/how-to-disable-ipv6-in-windows-11-home
 
@@ -33,7 +33,7 @@ https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configu
 
     * Disable Ipv6 Transistion Services                  = -
 
-Refers to technologies like 6to4, ISATAP, and Teredo. These encapsulate IPv6 packets inside IPv4. Disabling these is common when you have a native IPv4 or IPv6 connection to reduce the CPU overhead of packet tunneling.
+Refers to technologies like 6to4, ISATAP, and Teredo. These encapsulate IPv6 packets inside IPv4. Disabling these is common when you have a native IPv4 or IPv6 connection to reduce the CPU overhead of packet tunneling
 
 https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-ipv6-in-windows
 
@@ -41,11 +41,11 @@ https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configu
 
 !!! CAUTION !!!
 
-Disabling the Windows Firewall Profiles (Domain, Private, Public) to stop the inspection of every incoming/outgoing packet.
+Disabling the Windows Firewall Profiles (Domain, Private, Public) to stop the inspection of every incoming/outgoing packet
 
     * Disable Security Profiles                          = -
 
-Usually refers to Windows Firewall Profiles (Domain, Private, Public). Disabling these reduces the processing time per packet (filtering), but it removes the primary layer of OS network defense.
+Usually refers to Windows Firewall Profiles (Domain, Private, Public). Disabling these reduces the processing time per packet (filtering), but it removes the primary layer of OS network defense
 
 There are safer ways to go on about this for example:
 
@@ -60,9 +60,9 @@ https://windowsforum.com/threads/turning-off-windows-security-safe-temporary-use
 
     * Enable Weak Host Send/Recieve                      = -
 
-A "Weak Host" model allows a host to send or receive packets on an interface even if the IP address isn't strictly assigned to that specific physical port.
+A "Weak Host" model allows a host to send or receive packets on an interface even if the IP address isn't strictly assigned to that specific physical port
 
-In a Weak Host Model, a host can send/receive packets on an interface even if the destination/source IP address is assigned to a different interface on that same host. Enabling this can improve multi-homed connectivity but is often disabled for security to prevent spoofing.
+In a Weak Host Model, a host can send/receive packets on an interface even if the destination/source IP address is assigned to a different interface on that same host. Enabling this can improve multi-homed connectivity but is often disabled for security to prevent spoofing
 
 
 https://learn.microsoft.com/en-us/previous-versions/technet-magazine/cc137807(v%3Dmsdn.10)
@@ -71,7 +71,7 @@ https://learn.microsoft.com/en-us/previous-versions/technet-magazine/cc137807(v%
 
     * Enhance Connection Stability                       = +
 
-Typically involves configuring TCP Keep-Alive intervals. By ensuring the "heartbeat" of a connection is frequent and consistent, the system prevents dead gateways or intermediate routers from dropping "idle" sessions.
+Typically involves configuring TCP Keep-Alive intervals. By ensuring the "heartbeat" of a connection is frequent and consistent, the system prevents dead gateways or intermediate routers from dropping "idle" sessions
 
 https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-and-nbt-configuration-parameters
 
@@ -79,9 +79,9 @@ https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-a
 
     * Improve Network Packet Acknowlegdement             = +
 
-Adjusting the TcpAckFrequency (the "Delayed ACK" timer).
+Adjusting the TcpAckFrequency (the "Delayed ACK" timer)
 
-Setting this to 1 sends an acknowledgement for every packet immediately, significantly reducing latency in games at the cost of slightly higher bandwidth overhead.
+Setting this to 1 sends an acknowledgement for every packet immediately, significantly reducing latency in games at the cost of slightly higher bandwidth overhead
 
 https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/registry-entry-control-tcp-acknowledgment-behavior
 
@@ -89,7 +89,7 @@ https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/registr
 
     * Optimize IPv6 Address Handeling                    = -
 
-Disabling IPv6 Privacy Extensions (Temporary Addresses) to maintain a static interface ID.
+Disabling IPv6 Privacy Extensions (Temporary Addresses) to maintain a static interface ID
 
 https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-ipv6-in-windows
 
@@ -137,7 +137,7 @@ https://learn.microsoft.com/en-us/windows/win32/winsock/high-performance-windows
     
     * Reduce Network Background Interruptions            = +
 
-Tuning Interrupt Moderation.
+Tuning Interrupt Moderation
 
 https://learn.microsoft.com/en-us/windows-hardware/drivers/network/interrupt-moderation
 
@@ -168,7 +168,7 @@ https://learn.microsoft.com/en-us/windows-hardware/drivers/network/introduction-
 
 ----
 
-Adapter Tuner
+## Adapter Tuner
 
 ----
 
@@ -190,17 +190,17 @@ Direct hardware-level tuning of the Physical (PHY) and Data Link layers of the w
 
 Flow Control: Usually disabled to prevent the NIC from sending "Pause" frames which can increase latency
 
-Set to the maximum rated speed (e.g., 1.0 Gbps Full Duplex) to prevent "Autonegotiation" loops or downgrades.
+Set to the maximum rated speed (e.g., 1.0 Gbps Full Duplex) to prevent "Autonegotiation" loops or downgrades
 
 https://learn.microsoft.com/en-us/windows-server/networking/technologies/network-subsystem/net-sub-performance-tuning-nics?tabs=powershell
 
 -----
 
-#### BufferBloat
+## BufferBloat
 
-A phenomenon where excessive buffering in network equipment (like routers or switches) causes high latency and jitter, especially during high-load periods (like downloading while gaming).
+A phenomenon where excessive buffering in network equipment (like routers or switches) causes high latency and jitter, especially during high-load periods (like downloading while gaming)
 
-While primarily a router-side issue (fixed with SQM/FQ_Codel), on the Windows side, it is mitigated by reducing Send/Receive Buffer sizes and disabling Interrupt Moderation, which forces the system to empty the "buffers" more frequently.
+While primarily a router-side issue (fixed with SQM/FQ_Codel), on the Windows side, it is mitigated by reducing Send/Receive Buffer sizes and disabling Interrupt Moderation, which forces the system to empty the "buffers" more frequently
 
 https://learn.microsoft.com/en-us/windows-server/networking/technologies/network-subsystem/net-sub-performance-top
 
@@ -213,6 +213,6 @@ Pick what applies for your system:
     * Normal Mode                                        = -
     * Ultra Low Bufferbloat                              = +
 
-#### Network Priority
+## Network Priority
 
 You can toggle the on/off button to add a game for a more stable network connection
