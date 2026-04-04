@@ -580,7 +580,13 @@ Tweaks
 * Optimize Packet Coalescing                         = -
 * Optimize Winsock Buffer Behaviour                  = +
 * Reduce Network Background Interruptions            = +
+
+
+-----
 * Set Stabilize Network Routing                      = +
+
+https://learn.microsoft.com/en-us/windows-365/enterprise/optimization-of-rdp
+-----
 * Disable Heuristics                                 = -
 * Optimize MPP                                       = -
 
