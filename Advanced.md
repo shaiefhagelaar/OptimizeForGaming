@@ -1,8 +1,10 @@
 # Advanced
 
-! Proceed with caution ! Changing values and priorities may 'break' certain devices when you manually apply settings listed below
+! Proceed with caution ! Changing values and priorities may 'break' certain devices when you manually apply settings listed below. Make a screenshot of your settings while using the MSI(message-signaled interrupts) v3 tool.
 
 We'll be touching upon ISR (interrupt signal routine) MSI (message-signaled interrupts)
+
+
 
 Smoothing out MSI to cut down on polling rates of different devices.
 
