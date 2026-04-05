@@ -1,5 +1,24 @@
 # Advanced
 
+! Proceed with caution ! Changing values and priorities may 'break' certain devices when you manually apply settings listed below
+
+We'll be touching upon ISR (interrupt signal routine) MSI (message-signaled interrupts)
+
+Smoothing out MSI to cut down on polling rates of different devices.
+
+
+https://www.youtube.com/watch?v=G7bqvpAw7HE
+
+https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/introduction-to-interrupt-service-routines
+
+https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/introduction-to-message-signaled-interrupts
+
+https://www.intel.com/content/www/us/en/gaming/extreme-memory-profile-xmp.html
+
+## Legacy
+
+LBI(line based interrupts)
+
 -----
 
 ## Devices
