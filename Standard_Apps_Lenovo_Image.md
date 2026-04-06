@@ -18,10 +18,24 @@ Uninstall the following apps
 * Microsoft Edge (Widgets Unavailable    N/A    N/A
 * Microsoft OneDrive                     N/A    N/A
 * Microsoft OneNote - en-us              N/A    N/A
+* Microsoft Teams                        16     KB
 * Microsoft To Do                        16     KB
 * Microsoft Whiteboard                   16     KB
 * Movies & TV                            16     KB
 * News                                   16     KB
+* Outlook                                16     KB
+* Paint                                  16     KB
+* People                                 16     KB
+* Quick Assist                           16     KB
+* Solitaire                              16     KB
+* Start Experiences App                  6,36   MB
+* Sticky Notes                           16     KB
 * Tobii Experience                       168    KB
+* Tobii Experience Software for Windows  36     MB
 * Tobii Experience Software for Windows  39     MB
 * Tobii Experience Software for Windows  194    MB
+* Wheather                               16     KB
+* Web Media Extensions                   16     KB
+* Windows Clock                          16     KB
+* Xbox                                   64     KB
+* Xbox Live                              16     KB
