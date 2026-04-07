@@ -8,7 +8,7 @@ RLAT (Render Latency)
 
 PCL (Pc Latency)
 
-## 🖥️ Core Definitions
+## Core Definitions
 
 ### 1. Render Latency (The GPU Metric)
 **Render Latency** is the specific amount of time it takes for your Graphics Processing Unit (GPU) to draw a single frame. 
@@ -25,7 +25,7 @@ PCL (Pc Latency)
 
 ---
 
-## 📊 Key Differences at a Glance
+## Key Differences at a Glance
 
 | Feature | Render Latency (GPU Time) | Average PC Latency (System Latency) |
 | :--- | :--- | :--- |
@@ -36,7 +36,7 @@ PCL (Pc Latency)
 
 ---
 
-## 🛠️ Optimization Strategies
+## Optimization Strategies
 
 ### To Lower Render Latency (Boost FPS)
 If your render latency is high, your GPU is the bottleneck.
@@ -54,7 +54,7 @@ If your FPS is high but the game still feels unresponsive, you need to clear the
 
 ---
 
-## 📖 Synonyms & Industry Terms
+## Synonyms & Industry Terms
 
 * **Render Latency** is also known as: *GPU Frame Time, Rendering Time, or GPU Busy.*
 * **Average PC Latency** is also known as: *Input Lag, System Time, End-to-End Latency, or Click-to-Response.*
