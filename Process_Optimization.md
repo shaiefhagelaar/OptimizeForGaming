@@ -137,9 +137,29 @@ Handles the movement of data blocks for Windows Backup and Restore. This is used
 Source: https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/
 
 * Bluetooth Audio Gateway Service
+
+Manages the role of the PC as a "Hands-Free" device for incoming calls or audio routing.
+
+Source: https://learn.microsoft.com/en-us/windows-hardware/design/component-guidelines/bluetooth
+
 * Bluetooth Support Service
+
+The main engine that discovers and associates (pairs) Bluetooth devices.
+
+Source: https://learn.microsoft.com/en-us/windows-hardware/design/component-guidelines/bluetooth
+
 * Bluetooth USer support Service_dc3ef
+
+A per-user service that manages Bluetooth settings specifically for the logged-in user.
+
+Source: https://learn.microsoft.com/en-us/windows-hardware/design/component-guidelines/bluetooth
+
 * brlapi
+
+The Application Programming Interface for BrlTTY. This is an accessibility service. It allows software to communicate with a Braille display (a hardware device used by people who are blind or visually impaired to read text). If you don't use a Braille display, this is often installed as part of the "NVDA" screen reader or other specialized accessibility tools.
+
+Source: https://brltty.app/documentation.html
+
 * Capability Access Manger Service
 * CaptureService_dc3ef
 * Celluar Time
