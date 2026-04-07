@@ -160,27 +160,118 @@ The Application Programming Interface for BrlTTY. This is an accessibility servi
 
 Source: https://brltty.app/documentation.html
 
+# Letter C
+
 * Capability Access Manger Service
+
+Manages app access to privacy-sensitive features (Camera, Microphone, GPS).
+
+Source: https://learn.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations
+
 * CaptureService_dc3ef
+
+Handles screen captures and recording functionality for apps like Game Bar.
+
+Source: https://learn.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations
+
 * Celluar Time
+
+Uses cellular network signals to set the time (mostly for laptops with SIM cards/LTE).
+
+Source: https://support.lenovo.com/us/en/solutions/ht505081
+
 * Certificate Propagation
+
+Copies certificates from Smart Cards into the user's certificate store.
+
+Source: https://learn.microsoft.com/en-us/windows/win32/seccng/cng-features
+
 * Client License Service (ClipSVC)
+
+ClipSVC	Provides infrastructure support for Microsoft Store licenses (ensures paid apps are legal).
+
+Source: https://www.microsoft.com/en-us/licensing/product-licensing/client-access-license
+
 * Clipboard User Service_dc3ef
+
+Enables Cloud Clipboard (Copy on PC, Paste on Phone) and Clipboard History.
+
+Source:  https://www.smartpcutilities.com/windows-service.html?name=ClipSVC&os=win11
+
 * Cloud Backup and Restore Service_dc3ef
-* Cloud Backup and Restore Service_dc3ef
-* CNG Key Isolation
+
+Syncs your Windows settings and app data to your Microsoft account cloud.
+
+Source: https://support.microsoft.com/en-us/windows/back-up-and-restore-with-windows-backup-87a81f8a-78fa-456e-b521-ac0560e32338
+
+* CNG Key Isolation ! NEVER DISABLE !
+
+Hosted in the LSA process; isolates private keys to prevent them from being stolen by malware.
+
+Source: https://learn.microsoft.com/en-us/windows/win32/seccng/cng-features
+
 * COM+ Event System
+
+Notifies subscribers of system events (like logging on/off). Essential for many services.
+
+Source: https://learn.microsoft.com/en-us/windows/win32/cossdk/com--events
+
 * COM+ System Application
-* Connected Devices Platform Service
-* Connected Devices Platform User Service_dc3ef
+
+Manages the configuration and tracking of COM+ based components.
+
+Source: https://learn.microsoft.com/en-us/windows/win32/cossdk/com--application-overview
+
+* Connected Devices Platform Service & Connected Devices Platform User Service_dc3ef
+
+Allows your PC to talk to other devices (phones, tablets) using "Project Rome."
+
+Source: https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-cdp/929c2238-6d49-4ba4-a36a-37e732c4f736
+
 * Connected User Experiences and Telemetry
+
+Manages telemetry and diagnostic data (the "Universal Telemetry Client").
+
+Source: https://learn.microsoft.com/en-us/answers/questions/3987504/how-to-completely-and-permanently-disable-delete-w
+
 * ConsentUX User Service_dc3ef
+
+Manages the "User Account Control" (UAC) pop-ups specifically for modern app permissions.
+
+Source: https://learn.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations
+
 * Contact Data_dc3ef
+
+Indexes contact data for fast searching within Windows Mail, People, and Calendar.
+
+https://learn.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations
+
 * CoreMessaging
-* Credential Manager
-* CredentialEnrollmentMangerUserSvc_dc3ef
+
+A core communication layer that manages messages between system components.
+
+Source: https://www.smartpcutilities.com/windows-service.html?name=CoreMessagingRegistrar&os=win11
+
+* Credential Manager & CredentialEnrollmentMangerUserSvc_dc3ef
+
+Stores and retrieves credentials for users, websites, and network shares.
+
+Source: https://www.1kosmos.com/resources/blog/windows-credential-manager | https://learn.microsoft.com/en-us/answers/questions/3260023/why-do-i-have-two-credentialenrollmentmanagerusers
+
 * Critical Service for Lenovo Vantage
+
+A proprietary service for Lenovo laptops that handles battery thresholds and driver updates.
+
+Source: https://support.lenovo.com/us/en/solutions/ht505081
+
 * Cryptographic Services
+
+Confirms Windows file signatures and helps install/update system files.
+
+Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing-updates-features-roles/fix-windows-update-errors | https://support.microsoft.com/en-us/topic/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files-79aa86cb-ca52-166a-92a3-966e85d4094e
+
+# Letter D
+
 * Data Sharing Service
 * Data Usage
 * DCOM Server Process Launcher
