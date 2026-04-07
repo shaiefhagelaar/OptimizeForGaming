@@ -31,9 +31,26 @@ Windows services can be running in the background and cause 'sluggish' feel to t
 List of local Extended services running on the Laptop:
 
 * ActiveX Installer (AxInstSV)
+
+Essential, check the signature if needed be.
+
+Source: https://malwaretips.com/blogs/service-host-activex-installer/
+  
 * Agent Activation Runtime_dc3ef
-* Aggregated Data Platform Service
-* App Readniess
+
+svchost.exe is a system process that hosts and manages Windows services running from DLL files rather than standalone executable files, allowing Windows to modularize and efficiently manage background tasks.
+
+svchost.exe loads and runs Windows services, such as networking, Windows Update, audio, and many others. Multiple instances of svchost.exe can run simultaneously, each hosting different services. This helps with stability and security—if one service fails, it doesn't crash all services.
+
+Source: https://www.smartpcutilities.com/windows-service.html?name=AarSvc&os=win11
+
+* Aggregated Data Platform Service (Disabled)
+
+Gathers telemetry you can disable it.
+
+https://www.thewindowsclub.com/windows-10-telemetry
+
+* App Readiniss
 * Application Identity
 * Application Information
 * Application Layer Gateway Service
