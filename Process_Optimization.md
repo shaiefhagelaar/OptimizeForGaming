@@ -94,11 +94,48 @@ The Audio/Video Control Transport Protocol (AVCTP) is a specific subset of the B
 
 https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/optimize/services
 
+# Letter B
+
 * Background Intelligent Transfer Service
+
+Transfers files in the background using idle network bandwidth; used for Windows Updates. BITS is highly "polite." It monitors your network usage and only uses the bandwidth you aren't using. If you start a large download, BITS will throttle itself back to avoid lagging your connection.
+
+    Warning: Disabling this will prevent Windows Update and the Microsoft Store from functioning.
+
+Source: https://learn.microsoft.com/en-us/windows/win32/bits/background-intelligent-transfer-service-portal
+
 * Background Tasks Infrastructure Service
+
+The Background Tasks Infrastructure Service is a Windows system service that coordinates the execution of background work for WinRT applications, such as those downloaded from the Microsoft Store.
+
+This service is essential for the proper functioning of many WinRT applications, such as Mail, Calendar, Photos, etc. If this service is stopped or disabled, some of these apps may not work correctly or at all.
+
+Coordinates which background tasks can run to ensure they don't drain your battery or crash the system. This is a critical security component. It enforces the rules that decide which traffic is allowed into or out of your computer. 
+
+Source: https://www.smartpcutilities.com/windows-service.html?name=BrokerInfrastructure&os=win11
+
 * Base Filtering Engine
+
+The Base Filtering Engine (BFE) is a user-mode service (bfe.dll running in a svchost.exe process) that coordinates the WFP components. The principal tasks performed by BFE are adding and removing filters from the system, storing filter configuration, and enforcing WFP configuration security. Applications communicate with BFE through the WFP management functions.
+
+Manages firewall and IPsec policies; it is the "engine" that powers Windows Defender Firewall. This is a critical security component. It enforces the rules that decide which traffic is allowed into or out of your computer.
+
+    Warning: If stopped, your system's security is significantly compromised, and many other networking services will fail to start.
+
+Source: https://learn.microsoft.com/en-us/windows/win32/fwp/windows-filtering-platform-architecture-overview#base-filtering-engine
+
 * Bitlocker Drive Encryption Service
+
+Manages full-disk encryption to protect data if a device is lost or stolen.
+
+Source: https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/
+
 * Block Level Backup Engine Service
+
+Handles the movement of data blocks for Windows Backup and Restore. This is used by the legacy "Windows 7 Backup" tool still found in Windows 10/11. It performs "block-level" transfers, meaning it only copies the specific parts of a file that changed, making backups faster.
+
+Source: https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/
+
 * Bluetooth Audio Gateway Service
 * Bluetooth Support Service
 * Bluetooth USer support Service_dc3ef
