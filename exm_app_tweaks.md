@@ -1,75 +1,76 @@
-### General
+# Exm app
 
-#### Core
+Exm app will help with optimizing your Windows OS without the technical knowlegde. Do note that you'll have to be mindfull of what your desktop/laptop specifications are and what the toggles do.
+
+## General
 
 Generic settings that you can toggle on and off to decrease background processes to optimize your Windows instance. Do note that it may break certain services.
-----
-* Disable All Notification                           = -
 
-https://windowsreport.com/windows-11-disable-notifications/
+## Core
+
+---
+* Disable All Notification                           = -
 
 Risks and trade‑offs — be deliberate​
 Silencing reminders improves concentration, but be deliberate about which signals you block:
 
-    Keep alarms and trusted calendar reminders enabled if you rely on them for time‑critical tasks.
-    Be careful disabling Windows Security notifications — they often include actionable security warnings you shouldn’t miss.
-    For professional or managed devices, make changes through formal admin channels (GPO/Intune) to avoid configuration drift and support issues.
+Keep alarms and trusted calendar reminders enabled if you rely on them for time‑critical tasks. Be careful disabling Windows Security notifications — they often include actionable security warnings you shouldn’t miss. For professional or managed devices, make changes through formal admin channels (GPO/Intune) to avoid configuration drift and support issues.
 
 When in doubt, favor scheduled Focus sessions and per‑app controls — they balance quiet with safety.
 Final analysis and best practices​
 Windows 11’s notification architecture gives you granular control — and Microsoft continues to layer new engagement surfaces into thch is a pragmatic one:
 
-    Use Focus Sessions / Do Not Disturb for temporary deep work; schedule them so quiet becomes automatic.
-    Disable system tips and Cloud Content suggestions if you want to stop onboarding prompts and product nudges.
-    Triage apps one by one rather than using the master kill switch.
-    For privacy/ads, disable Advertising ID and Tailored experiences.
-    For organizations, apply Cloud Content Group Policy values to enforce a consistent user experience, but test across SKUs and builds because behavior can vary.
------  
+Use Focus Sessions / Do Not Disturb for temporary deep work; schedule them so quiet becomes automatic. Disable system tips and Cloud Content suggestions if you want to stop onboarding prompts and product nudges. Triage apps one by one rather than using the master kill switch. For privacy/ads, disable Advertising ID and Tailored experiences. For organizations, apply Cloud Content Group Policy values to enforce a consistent user experience, but test across SKUs and builds because behavior can vary.
+
+Source: https://windowsreport.com/windows-11-disable-notifications/
+
+---  
 * Disable Animations                                 = +
 
 How Disabling Animation Fits into Broader Performance Tweaks​
 Turning off animations should be viewed as one element in a toolkit for optimizing Windows 11. Other options—such as disabling transparency effects, pruning unnecessary background services, and tweaking visual settings—can yield further improvements in both perceived and real-world speed. For maximum benefit, users often combine multiple tweaks:
 
-    Disable Transparency: Turning off transparency effects (via Settings > Personalization > Colors) further reduces graphical overhead.
-    Background Apps: Managing which apps can run in the background (Settings > Privacy & Security > Background apps) can recover additional responsiveness, particularly on older PCs.
-    Startup Programs: Pruning the startup list ensures a leaner boot and less contention for RAM and CPU cycles.
+Disable Transparency: Turning off transparency effects (via Settings > Personalization > Colors) further reduces graphical overhead. Background Apps: Managing which apps can run in the background (Settings > Privacy & Security > Background apps) can recover additional responsiveness, particularly on older PCs. Startup Programs: Pruning the startup list ensures a leaner boot and less contention for RAM and CPU cycles.
 
 https://windowsforum.com/threads/boost-windows-11-performance-by-disabling-animations-for-snappier-user-experience.371135/
 
 No single tweak can overcome fundamental hardware bottlenecks, but a combination of settings—including disabling animations—can bridge much of the perceived speed gap between Windows 10 and its successor.
-Tweak	Effect	Where to Find
-Disable Animations	Faster UI, less visual lag	Accessibility > Visual Effects
-Turn Off Transparency	Reduces GPU load, boosts clarity	Personalization > Colors
-Manage Background Apps	Frees resources, slows drain	Privacy & Security > Background Apps
-Remove Startup Programs	Faster boot, more available RAM	Task Manager > Startup
-Adjust Power Settings	Maximizes performance potential	System > Power & battery
------ 
+
+Tweak	                    Effect	                                Where to Find
+
+Disable Animations	        Faster UI, less visual lag	            Accessibility > Visual Effects
+Turn Off Transparency	    Reduces GPU load, boosts clarity	    Personalization > Colors
+Manage Background Apps	    Frees resources, slows drain	        Privacy & Security > Background Apps
+Remove Startup Programs	    Faster boot, more available RAM	        Task Manager > Startup
+Adjust Power Settings	    Maximizes performance potential	        System > Power & battery
+
+--- 
 * Disable Bluetooth Services                         = +
 
 Security, battery life, and privacy: how much do you gain by disabling Bluetooth?​
 
-    Battery benefit: Disabling Bluetooth reduces background radio usage and can save battery on laptops and tablets. The exact amount varies by device, usage, and whether peripherals stay connected — a precise percentage change can't be universally guaranteed and depends on hardware and usage patterns (this claim is practical rather than precisely quantifiable without device‑specific testing). Flag: unverifiable as a single number.
-    Privacy and attack surface: Turning the radio off reduces the chance of unsolicited pairing requests and limits the local attack surface. That said, Wi‑Fi, USB, and other interfaces remain potential vectors; Bluetooth is just one part of an overall security strategy. Disabling Bluetooth is a pragmatic privacy step but not a complete security fix.
-    Troubleshooting benefit: Cutting the radio or disabling the driver is a reliable diagnostic tool. If the problem follows the device (works on phone, not on PC), disabling and re‑enabling or reinstalling drivers helps isolate whether the issue is OS, driver, or peripheral side.
+Battery benefit: Disabling Bluetooth reduces background radio usage and can save battery on laptops and tablets. The exact amount varies by device, usage, and whether peripherals stay connected — a precise percentage change can't be universally guaranteed and depends on hardware and usage patterns (this claim is practical rather than precisely quantifiable without device‑specific testing). Flag: unverifiable as a single number.
+Privacy and attack surface: Turning the radio off reduces the chance of unsolicited pairing requests and limits the local attack surface. That said, Wi‑Fi, USB, and other interfaces remain potential vectors; Bluetooth is just one part of an overall security strategy. Disabling Bluetooth is a pragmatic privacy step but not a complete security fix.
+Troubleshooting benefit: Cutting the radio or disabling the driver is a reliable diagnostic tool. If the problem follows the device (works on phone, not on PC), disabling and re‑enabling or reinstalling drivers helps isolate whether the issue is OS, driver, or peripheral side.
 
 https://windowsforum.com/threads/how-to-disable-bluetooth-in-windows-11-quick-settings-to-services.387414/
------
-* Disable Driver Searching                           = -
 
+---
+* Disable Driver Searching                           = -
 
 Removing hidden ghost drivers is a legitimate and effective optimization for Windows 11 systems under heavy load. The biggest wins come from old GPU drivers, old network drivers, and USB device bloat. Always create a restore point first, never remove entries under the Non-Plug and Play Drivers node, and use DDU when switching GPU brands for the cleanest possible result.
 
 https://windowsforum.com/threads/the-ultimate-guide-to-removing-old-hidden-device-drivers-in-windows-11.360680/
 
-DPC Latency increase: Ghost drivers can execute Deferred Procedure Calls, adding latency spikes — devastating for frame pacing and real-time audio
+DPC Latency increase: Ghost drivers can execute Deferred Procedure Calls, adding latency spikes — devastating for frame pacing and real-time audio.
 
 https://windowsforum.com/threads/latencymon-guide-identify-driver-latency-causing-stutters-in-windows.386112/
 
-IRQ / Resource conflicts: Old entries may reserve interrupt lines or memory ranges, starving your active GPU or NVMe controller
+IRQ / Resource conflicts: Old entries may reserve interrupt lines or memory ranges, starving your active GPU or NVMe controller.
 
 https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/checking-for-resource-conflicts
 
-Non-paged pool memory waste: Some residual drivers allocate kernel memory that is permanently locked in RAM
+Non-paged pool memory waste: Some residual drivers allocate kernel memory that is permanently locked in RAM.
 
 https://techcommunity.microsoft.com/blog/askperf/memory-management---understanding-pool-resources/372321
 
@@ -110,48 +111,49 @@ https://windowsforum.com/threads/windows-11-gaming-tuning-guide-2026-safe-consis
 
 To keep your system stable for work, the best practice is to stay on the Windows 11 Home/Pro "Stable" branch and avoid the Insider Program entirely.
 
------
+---
 * Disable Gamedvr                                    = +
 
 Disabling Game DVR in Windows 11 is a common step for users looking to reclaim system resources, as the feature constantly monitors and records your screen in the background to enable "instant replays." This background recording consumes CPU cycles, GPU encoding power, and disk I/O, which can cause micro-stutters or reduced FPS in heavy workloads.
 
 Why this matters for Performance
 
-    Reduced Overhead: Disabling the "Background Recording" feature frees up your GPU's hardware encoder (NVENC/AMF), which is better utilized by your actual game or professional rendering software.
+Reduced Overhead: Disabling the "Background Recording" feature frees up your GPU's hardware encoder (NVENC/AMF), which is better utilized by your actual game or professional rendering software.
 
-    Reduced Input Lag: By stopping the OS from constantly "hooking" into your display output to capture frames, many users report a "snappier" feel and lower system latency.
+Reduced Input Lag: By stopping the OS from constantly "hooking" into your display output to capture frames, many users report a "snappier" feel and lower system latency.
 
-    Disk Activity: Game DVR writes temporary video files to your drive constantly. Disabling it reduces unnecessary SSD wear and I/O saturation during heavy file transfers.
+Disk Activity: Game DVR writes temporary video files to your drive constantly. Disabling it reduces unnecessary SSD wear and I/O saturation during heavy file transfers.
 
 The Registry Edit (Full Disable)
 
 If you want to ensure the recording engine (Game DVR) is completely inactive, you can use the Registry Editor.
 
-    Note: Always back up your registry before making changes.
+Note: Always back up your registry before making changes.
 
-    Press Win + R, type regedit, and hit Enter.
+Press Win + R, type regedit, and hit Enter.
 
-    Navigate to: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR
+Navigate to: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR
 
-    Find AppCaptureEnabled. Double-click it and set the value to 0.
+Find AppCaptureEnabled. Double-click it and set the value to 0.
 
-    If it doesn't exist, right-click > New > DWORD (32-bit) Value, name it exactly that, and set it to 0.
+If it doesn't exist, right-click > New > DWORD (32-bit) Value, name it exactly that, and set it to 0.
 
-    Navigate to: HKEY_CURRENT_USER\System\GameConfigStore
+Navigate to: HKEY_CURRENT_USER\System\GameConfigStore
 
-    Find GameDVR_Enabled. Double-click it and set the value to 0.
+Find GameDVR_Enabled. Double-click it and set the value to 0.
 
-    Restart your PC for changes to take effect.
+Restart your PC for changes to take effect.
 
 A quick tip: If you are disabling this for gaming, ensure "Game Mode" (Settings > Gaming > Game Mode) is actually ON. While it sounds counter-intuitive, in Windows 11, Game Mode prioritizes your game’s process and prevents Windows Update from installing drivers in the background while you work or play.
 
 https://iqondigital.com/learn/pc-optimization/game-bar-dvr
 
 https://www.kingston.com/en/blog/gaming/windows-11-pc-performance-features-for-gamers#:~:text=Windows%2011's%20Game%20Mode%2C%20which,tasks%20like%20updates%20and%20notifications.
------
 
-* 
-# Disable Microsoft Edge                             = +
+---
+
+ 
+* Disable Microsoft Edge                             = +
 
 To maximize system resources for gaming and heavy workloads, you don't necessarily need to "uninstall" Microsoft Edge (which can be risky since it’s deeply integrated into Windows 11). Instead, you can effectively neutralize its background resource consumption.
 
@@ -162,19 +164,19 @@ Scheduled Maintenance in Windows 11 is a built-in feature designed to run tasks 
 
 To prevent Windows from automatically starting maintenance entirely, you can use the Registry Editor.
 
-    Note: Always back up your registry before making changes.
+Note: Always back up your registry before making changes.
 
-    Press Win + R, type regedit, and hit Enter.
+Press Win + R, type regedit, and hit Enter.
 
-    Navigate to: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance
+Navigate to: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance
 
-    Right-click in the right pane, select New > DWORD (32-bit) Value.
+Right-click in the right pane, select New > DWORD (32-bit) Value.
 
-    Name it MaintenanceDisabled.
+Name it MaintenanceDisabled.
 
-    Double-click it and set the Value data to 1.
+Double-click it and set the Value data to 1.
 
-    Restart your computer.
+Restart your computer.
 
 * Disable All Notification                           = -
 * Disable Animations                                 = +
