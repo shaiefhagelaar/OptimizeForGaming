@@ -87,6 +87,9 @@ Test on maximum settings (Cinematic , V-Sync On, Ray Tracing, Shadows, Volumetri
 * Nvidea Control panel
 * Cap Frame X
 * .Net Framework 9.0.14
+* Msi Utility v3
+* Winhance
+* 
 
 ## Start
 
@@ -132,6 +135,10 @@ Installed Windows 11 23H2 from the image provided by Lenovo. Lenovo uses custom 
 * Cap Frame X               https://www.capframex.com/
                  
 * .Net Framework 9.0.14     https://dotnet.microsoft.com/en-us/download/dotnet/9.0
+
+* Msi Utility v3            https://github.com/Sathango/Msi-Utility-v3
+
+* Winhance                  https://winhance.net/
 
 ## EXM App
 
