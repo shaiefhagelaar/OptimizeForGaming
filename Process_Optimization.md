@@ -30,7 +30,11 @@ Windows services can be running in the background and cause 'sluggish' feel to t
 
 List of local Extended services running on the Laptop:
 
+---
+
 ## Letter A
+
+---
 
 * ActiveX Installer (AxInstSV)
 
@@ -94,7 +98,11 @@ The Audio/Video Control Transport Protocol (AVCTP) is a specific subset of the B
 
 https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/optimize/services
 
+---
+
 # Letter B
+
+---
 
 * Background Intelligent Transfer Service
 
@@ -160,7 +168,11 @@ The Application Programming Interface for BrlTTY. This is an accessibility servi
 
 Source: https://brltty.app/documentation.html
 
+---
+
 # Letter C
+
+---
 
 * Capability Access Manger Service
 
@@ -270,7 +282,11 @@ Confirms Windows file signatures and helps install/update system files.
 
 Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing-updates-features-roles/fix-windows-update-errors | https://support.microsoft.com/en-us/topic/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files-79aa86cb-ca52-166a-92a3-966e85d4094e
 
+---
+
 # Letter D
+
+---
 
 * Data Sharing Service
 * Data Usage
@@ -298,20 +314,48 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * Distributed Transaction Coordinator
 * DNS Client
 * Downloaded Maps Manager
+
+---
+
+## Letter E
+
+---
+
 * Elevoc Control Service
 * Embedded Mode
 * Encrypting File System (EFS)
 * Enterprise App Management Service
 * EXM Tweaks Service
 * Extensible Authentication Protocol
+
+---
+
+## Letter F
+
+---
+
 * File History Service
 * Function Discovery Provider Host
 * Function Discovery Resource Publication
+
+---
+
+## Letter G
+
+---
+
 * GameDVR and Broadcast User Service_dc3ef
 * GameInput Service
 * Geolocation Service
 * GraphicsPerfSvc
 * Group Policy Client
+
+---
+
+## Letter H
+
+---
+
 * Host Network SErvice
 * Hotpatch Monitoring Service
 * Human Interface Device Service
@@ -325,6 +369,13 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * Hyper-V Remote Desktop Virtualization Service
 * Hyper-V Time Synchronization Service
 * Hyper-V Volume Shadow Copy Reuquestor
+
+---
+
+## Letter I
+
+---
+
 * IKE and AuthIP IPsec Keying Modules
 * Intel(R) Audio Service
 * Intel(R) Dynamic Application Loader Host Interface Service
@@ -337,6 +388,13 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * IP Helper
 * IP Translation Configuration Service
 * IPsec Policy Agent
+
+---
+
+## Letter K
+
+---
+
 * Kerberos Local Key Distribution Center
 * Killer Analytics Service
 * Kerberos Local Key Distribution Center
@@ -344,6 +402,13 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * Killer Provider Data Helper Service
 * Killer Smart AP Selection Service
 * KtmRm for Distributed Transaction Coordinator
+
+---
+
+## Letter L
+
+---
+
 * Language Experience Service
 * Lenovo Experience Service
 * Lenovo Fn and function keys service
@@ -351,6 +416,13 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * Link-Layer Topology Discovery Mapper
 * Local Profile Assistant Service
 * Local Session Manager
+
+---
+
+## Letter M
+
+---
+
 * McpManagementService
 * MessagingService_dc3ef
 * Microsoft Account Sign-in Assistant
@@ -367,6 +439,13 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * Microsoft Windows SMS Router Service
 * Mobile Connectivity Management Service
 * Mozilla Maintenance Service
+
+---
+
+## Letter N
+
+---
+
 * Nahimic service
 * Natural Authentication
 * Net.Tcp Port Sharing Service
@@ -383,8 +462,22 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * NVIDIA Display Container LS
 * NVIDIA FrameView SDK service
 * NVIDIA LocalSystem Container
+
+---
+
+## Letter O
+
+---
+
 * OpenSSH AUthentication agent
 * Optimize drives
+
+---
+
+## Letter P
+
+---
+
 * P9RdrService_dc3ef
 * Prental Controls
 * Patments and NFC/SE Manager
@@ -402,7 +495,21 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * PrintWorkflow_dc3ef
 * Problem Reports Control Panel Support
 * Program Compatibility Assistant Service
+
+---
+
+## Letter Q
+
+---
+
 * Quality Windows Audio Video Experience
+
+---
+
+## Letter R
+
+---
+
 * Radio Management Service
 * Realtek Audio Universal Service
 * Recommended Troubleshooting Service
@@ -418,6 +525,14 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * Retail Demo Service
 * Routing and Remote Access
 * RPC Endpoint Mapper
+
+
+---
+
+## Letter S
+
+---
+
 * Secondary Logon
 * Secure Socket Tunneling Protocol Service
 * Security Accounts Manager
@@ -446,6 +561,13 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * System Event Notification Service
 * System Events Broker
 * System Interface Foundation Service
+
+---
+
+## Letter T
+
+---
+
 * Task Scheduler
 * TCP/IP NetBIOS Helper
 * Telephony
@@ -458,6 +580,13 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * Tobii Runtime Service
 * Tobii Runtime Service
 * Tobii Service
+
+---
+
+## Letter U
+
+---
+
 * Udk User Service_dc3ef
 * Universal Device Client Service
 * Update Orchestrator Service
@@ -466,10 +595,24 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * User Data Storage_dc3ef
 * User Manager
 * User Profile Service
+
+---
+
+## Letter V
+
+---
+
 * Virtual Disk
 * Visual Studio Installer Elevation Service
 * Visial Studio Standard Collector Service 150
 * Volume Shadow Copy
+
+---
+
+## Letter W
+
+---
+
 * WaaSMedicSvc
 * WalletService
 * Warp JIT Service
@@ -520,6 +663,13 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 * Workstation
 * WSAIFabricSvc
 * WWAN AutoConfig
+
+---
+
+## Letter X
+
+---
+
 * XBox Acccessory Management Service
 * XBox Live Auth Manager
 * Xbox Live Game Save
