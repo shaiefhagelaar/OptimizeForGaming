@@ -9,7 +9,7 @@ Generic settings that you can toggle on and off to decrease background processes
 ## Core
 
 ---
-* Disable All Notification                           = -
+* Disable All Notifications                          = -
 
 Risks and trade‑offs — be deliberate​
 Silencing reminders improves concentration, but be deliberate about which signals you block:
@@ -146,9 +146,7 @@ Restart your PC for changes to take effect.
 
 A quick tip: If you are disabling this for gaming, ensure "Game Mode" (Settings > Gaming > Game Mode) is actually ON. While it sounds counter-intuitive, in Windows 11, Game Mode prioritizes your game’s process and prevents Windows Update from installing drivers in the background while you work or play.
 
-https://iqondigital.com/learn/pc-optimization/game-bar-dvr
-
-https://www.kingston.com/en/blog/gaming/windows-11-pc-performance-features-for-gamers#:~:text=Windows%2011's%20Game%20Mode%2C%20which,tasks%20like%20updates%20and%20notifications.
+Source: https://iqondigital.com/learn/pc-optimization/game-bar-dvr | https://www.kingston.com/en/blog/gaming/windows-11-pc-performance-features-for-gamers#:~:text=Windows%2011's%20Game%20Mode%2C%20which,tasks%20like%20updates%20and%20notifications.
 
 ---
 
@@ -178,18 +176,29 @@ Double-click it and set the Value data to 1.
 
 Restart your computer.
 
-* Disable All Notification                           = -
-* Disable Animations                                 = +
-* Disable Bluetooth Services                         = +
-* Disable Driver Searching                           = -
-* Disable Experimental Features                      = +
-* Disable Gamedvr                                    = +   
-* Disable Scheduled Maintenance                      = -
+---
+
 * Disable Search Indexing                            = +
-* Disable Scheduled Maintenance                      = -
-* Disable Search Indexing                            = +  
+
+Stops the SearchIndexer.exe from scanning files in the background. Greatly reduces Disk usage (HDD/SSD). Note: Local file searching will be significantly slower.
+
+Source: https://www.elevenforum.com/t/enable-or-disable-search-indexing-in-windows-11.2943/
+
+---
+
 * Disable Start up Delay for Apps                    = +
+
+
+Source: 
+
+---
+
 * Disable Transparency Effects                       = +
+
+
+
+---
+
 * Disable Windows Updates                            = -
 * Disable Xbox Services                              = +
 * Enable Game Mode                                   = +
