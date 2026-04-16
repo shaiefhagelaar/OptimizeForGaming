@@ -156,7 +156,7 @@ The main engine that discovers and associates (pairs) Bluetooth devices.
 
 Source: https://learn.microsoft.com/en-us/windows-hardware/design/component-guidelines/bluetooth
 
-* Bluetooth USer support Service_dc3ef
+* Bluetooth User support Service_dc3ef
 
 A per-user service that manages Bluetooth settings specifically for the logged-in user.
 
@@ -289,31 +289,108 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 ---
 
 * Data Sharing Service
+
+Provides data brokering between apps: Unlike "Nearby Sharing" or "Network Sharing," which are user-facing features for sending files to other people or devices, the Data Sharing Service operates at the system level as a broker.
+
 * Data Usage
+
+Tracks network data (WiFi/Ethernet) usage. Safe to disable if you don't use the "Data Usage" chart in Settings.
+
 * DCOM Server Process Launcher
+
+Infrastructure for starting COM/DCOM servers.
+
 * Declared Configuration(DC) service
+
+Used for enterprise device management (MDM). Unnecessary for Home users.
+
 * Delivery Optimization
+
+Allows your PC to share/receive Windows Update bits from other PCs.
+
 * Device Association Service
+
+Handles pairing between your PC and wired/wireless devices (Bluetooth).
+
 * Device Install Service
+
+Enables the system to recognize and install drivers for new hardware.
+
 * Device Management Enrollment Service
+
+Used for managing devices in a business domain. Not needed for Home.
+
 * Device Management Wireless Application Protocol (WAP) Push message Routing Service
+
+Used by Microsoft for telemetry and remote device management.
+  
 * Device Setup Manager
+
+Downloads icons and metadata for your devices (e.g., your mouse icon in Settings).
+
 * Device AssociationBroker_dc3ef
+
+User-specific service for pairing devices. Disabling breaks Bluetooth/Casting.
+
 * DevicePicker_dc3ef
+
+Manages the UI when you try to "Cast" or "Project" to another screen.
+
 * DevicesFlow_dc3ef
+
+Required for the "Connect" flyout and modern device connection UI.
+
 * DevQuery Background Discovery Broker
+
+Allows apps to find devices (like printers) in the background.
+
 * DHCP Client
+
+Obtains your IP address from your router.
+
 * Diagnostic Execution Service
+
+Runs specialized diagnostic tasks for the OS.
+
 * Diagnostic Policy Service
+
+Enables the Windows "Troubleshooters" (e.g., "Fix my internet").
+
 * Diagnostic Service Host
+
+Supporting service for the Diagnostic Policy Service.
+
 * Diagnostic System Host
+
+Supporting service for the Diagnostic Policy Service.
+
 * Discord System Helper
+
+A 3rd-party service installed by Discord for updates and its overlay.
+
 * Display Enhancement Service
+
+Manages HDR, brightness, and color profiles.
+
 * Display Policy Service
+
+Manages how windows are laid out across monitors.
+
 * Distributed Link Tracking Client
+
+Maintains links between NTFS files on different computers in a network.
+
 * Distributed Transaction Coordinator
+
+Coordinates transactions across multiple databases. Rarely used by Home users.
+
 * DNS Client
+
+Resolves website names (like google.com) into IP addresses.
+
 * Downloaded Maps Manager
+
+Background service for the "Maps" app. Safe if you use a web browser for maps.
 
 ---
 
@@ -322,11 +399,28 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 ---
 
 * Elevoc Control Service
+
+A third-party AI noise-canceling driver (often found on Lenovo/ASUS laptops).
+
 * Embedded Mode
+
+Enables background functions for "IoT" or "Kiosk" style apps. Rare on Home edition.
+
 * Encrypting File System (EFS)
+
+Provides core file-level encryption. Note: Windows 11 Home doesn't support BitLocker, but EFS is the underlying tech.
+
 * Enterprise App Management Service
+
+Used for managing corporate-purchased apps. Entirely useless for a Home user.
+
 * EXM Tweaks Service
+
+This is not a standard Windows service. It belongs to a third-party "tweaking" or "optimization" tool you likely installed.
+
 * Extensible Authentication Protocol
+
+Used for network authentication (802.1x). Necessary if you use corporate or school Wi-Fi.
 
 ---
 
@@ -335,8 +429,16 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 ---
 
 * File History Service
+
+Manages the "File History" backup feature. If you use a different backup tool (like Macrium or Acronis), you don't need this.
+
 * Function Discovery Provider Host
+
+Allows your PC to find other devices/printers on the local network.
+
 * Function Discovery Resource Publication
+
+Allows other devices on the network to find your PC.
 
 ---
 
@@ -345,10 +447,24 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 ---
 
 * GameDVR and Broadcast User Service_dc3ef
+
+Powers the Xbox Game Bar’s recording and broadcasting features.
+
 * GameInput Service
+
+The modern API for game controllers. Disabling this can break compatibility with newer controllers.
+
 * Geolocation Service
+
+Tracks your PC's physical location for apps like Weather or Maps.
+
 * GraphicsPerfSvc
+
+Monitors and optimizes graphics performance for apps.
+
 * Group Policy Client
+
+Critical. Even on Windows Home, this service applies settings and security configurations.
 
 ---
 
@@ -356,19 +472,57 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 
 ---
 
-* Host Network SErvice
+* Host Network Service
+
+Manages networking for containers and virtual machines. Required if you use Docker or WSL2.
+
 * Hotpatch Monitoring Service
+
+A newer service that monitors "Hotpatching"—updates that fix the OS without requiring a reboot.
+
 * Human Interface Device Service
+
+Critical. Manages keyboards, mice, remote controls, and "hotkeys" on your laptop.
+
 * HV Host Service
+
+The "Hypervisor" host service. It provides the interface for virtual machines to talk to the CPU.
+
 * Hyper-V Data Exchange Service
+
+Provides a way to share basic metadata between the Windows host and a virtual machine.
+
 * Hyper-V Guest Service Interface
+
+Provides an interface for the host to copy files to/from a guest VM.
+
 * Hyper-V Guest Shutdown Service
+
+Allows the host OS to trigger a "Graceful Shutdown" of a virtual machine.
+
 * Hyper-V Heartbeat Service
+
+Monitors the state of a virtual machine to see if it has crashed or hung.
+
 * Hyper-V Host Compute Service
+
+Manages the "containers" that run VMs or the Windows Sandbox.
+
 * Hyper-V Powershell Direct Service
+
+Allows you to manage virtual machines via PowerShell without a network connection.
+
 * Hyper-V Remote Desktop Virtualization Service
+
+Provides a video/audio pipe for virtual machines (Virtual Desktop).
+
 * Hyper-V Time Synchronization Service
+
+Synchronizes the clock of a virtual machine with the clock of your physical PC.
+
 * Hyper-V Volume Shadow Copy Reuquestor
+
+Allows you to back up virtual machines while they are still running.
 
 ---
 
@@ -377,17 +531,52 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 ---
 
 * IKE and AuthIP IPsec Keying Modules
+
+Handles authentication for VPNs and secure network connections.
+
 * Intel(R) Audio Service
+
+Part of the Intel Smart Sound Technology. Essential for your speakers/mic to work.
+
 * Intel(R) Dynamic Application Loader Host Interface Service
+
+Manages secure app execution for Intel hardware features.
+
 * Intel(R) Dynamic Tuning Technology Telemetry Service
+
+Manages power/heat to optimize battery life and performance.
+
 * Intel(R) Innocation Platform Framework Service
+
+Formerly known as DPTF; helps the OS manage hardware-level power/thermal states.
+
 * Intel(R) Management Engine WMI Provider Registration
+
+nterface for the MEI driver, used for low-level hardware communication.
+
 * Intel(R) Platform License Manager Service
+
+Used for managing software licenses tied to Intel hardware features.
+
 * Internet Connection Sharing (ICS)
+
+Allows you to share your internet with other devices (Mobile Hotspot).
+
 * Inventory and Compatibility Appraisal service
+
+A telemetry service that checks if your PC is compatible with future updates.
+
 * IP Helper
+
+Provides connectivity using IPv6. Many modern apps and games require this.
+
 * IP Translation Configuration Service
+
+Configures network address translation (NAT). Needed for some local networking.
+
 * IPsec Policy Agent
+
+Essential for network security and VPNs.
 
 ---
 
@@ -396,12 +585,32 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 ---
 
 * Kerberos Local Key Distribution Center
+
+Security. Even on Home edition, this handles local authentication and security tokens. It is part of the core security subsystem.
+
+Source: https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831553(v=ws.11)
+
 * Killer Analytics Service
-* Kerberos Local Key Distribution Center
+
+Part of the Killer Networking suite. It collects data on app usage to "optimize" traffic. Mostly telemetry.
+
+
+
 * Killer Network Service
+
+The main service for Killer's traffic prioritization. While it aims to help gaming, it is notorious for high CPU/RAM usage.
+
 * Killer Provider Data Helper Service
+
+Assists the Killer Control Center in displaying bandwidth stats. Non-essential for actual internet connectivity.
+
 * Killer Smart AP Selection Service
+
+Automatically switches between Wi-Fi access points based on signal. Can cause "drops" during gaming.
+
 * KtmRm for Distributed Transaction Coordinator
+
+Coordinates transactions between the Kernel Transaction Manager (KTM) and the Distributed Transaction Coordinator (DTC).
 
 ---
 
@@ -410,12 +619,31 @@ Source: https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing
 ---
 
 * Language Experience Service
+
+Manages language packs and localized UI elements for UWP/Store apps. Prevents automatic updates to language features; may cause issues with multi-language setups.
+
 * Lenovo Experience Service
+
+Part of Lenovo Vantage. Handles telemetry and "user experience" features. Disables some Lenovo-specific software features and stops usage data from being sent to Lenovo.
+
 * Lenovo Fn and function keys service
+
+Controls the specialized behavior of the F1-F12 keys (brightness, volume, etc.). The "Hotkeys" will stop working; you may have to hold the Fn key or use Windows settings for brightness.
 * Lenovo Whisper Mode Service
+
+Manages fan profiles and noise reduction, often tied to thermal management. The laptop may default to a louder fan profile or lose the ability to toggle "Quiet Mode."
+
 * Link-Layer Topology Discovery Mapper
+
+Discovers PCs and devices on the local network and creates a network map. You will no longer see a visual "map" of your network in the Network and Sharing Center.
+
 * Local Profile Assistant Service
+
+Assists in the management and creation of local user profile data. Potential issues with user logins or profile syncing if multiple users are on one PC.
+
 * Local Session Manager
+
+Core service that manages local user sessions (login, logout, switching users). Do not disable. Disabling this can lead to system instability or the inability to log in.
 
 ---
 
