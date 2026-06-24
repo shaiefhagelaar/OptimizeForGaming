@@ -191,7 +191,7 @@ Boot into safe mode.
 
 Start up the program.
 
-Apply the following setting:
+Apply the following settings:
 
 <img width="3024" height="4032" alt="rn_image_picker_lib_temp_aea4484d-fa1c-4d61-80a1-a0764f076d9e" src="https://github.com/user-attachments/assets/46bd800a-01e5-40c1-b059-1567a605baa8" />
 
