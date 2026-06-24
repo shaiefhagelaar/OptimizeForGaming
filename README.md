@@ -18,11 +18,11 @@ https://exmtweaks.com/en-eu/free-tweaks/how-get-lower-processes-windows
 ## Issues (Unresolved)
 
 * Windows DPC Watchdogs Violation (turned on settings in EXM App)
-* Uninstall Cap Frame X
-* Fix RTTS overlay for MSI Afterburner
 
 ## To do list
 
+* Uninstall Cap Frame X
+* Fix RTTS overlay for MSI Afterburner
 * Baseline tests (just to be safe)
 * Test each setting/toggle
 * Describe each setting/toggle
@@ -42,7 +42,6 @@ https://exmtweaks.com/en-eu/free-tweaks/how-get-lower-processes-windows
   
 * Make sure to run a effective system (disable as many processes without breaking the system)
 * Leave security features on!
-
 
 # Warning/Disclaimer
 
