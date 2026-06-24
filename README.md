@@ -97,7 +97,7 @@ Start with a fresh/clean Windows install from the official Lenovo website. Don't
 
 #### Windows
 
-* Windows:               Windows 11 25H2
+* Windows:               Windows 11 26H1
 * Installed:             30/‎03/‎2026
 * OSBuild:               26200.8039
 
@@ -140,6 +140,8 @@ Installed Windows 11 23H2 from the image provided by Lenovo. Lenovo uses custom 
 
 * Winhance                  https://winhance.net/
 
+* Wagnardsoft              https://www.wagnardsoft.com/display-driver-uninstaller-ddu
+
 ## EXM App
 
 Configuration of options available and what they do.
@@ -175,14 +177,22 @@ Also make sure to download & install the Beta version listed on their github rel
 * RAM Usage (%)
 
 
-
 ## MSI Afterburner & RivaTuner
 
 https://www.msi.com/Landing/afterburner/graphics-cards
 
-### 
+### Nvidia Driver
 
-### Nvidea App
+We'll be optimizing the Nvidia Driver. Download the following program: https://www.wagnardsoft.com/display-driver-uninstaller-ddu
 
-### Nvidea Control Panel
+Boot into safe mode.
+
+Start up the program.
+
+Apply the following setting:
+
+<img width="3024" height="4032" alt="rn_image_picker_lib_temp_aea4484d-fa1c-4d61-80a1-a0764f076d9e" src="https://github.com/user-attachments/assets/46bd800a-01e5-40c1-b059-1567a605baa8" />
+
+
+Nvidia App & Nvidia Control Panel should still function properly, there's a chance that some functionality might break.
 
