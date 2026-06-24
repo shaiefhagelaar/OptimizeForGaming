@@ -18,11 +18,11 @@ https://exmtweaks.com/en-eu/free-tweaks/how-get-lower-processes-windows
 ## Issues (Unresolved)
 
 * Windows DPC Watchdogs Violation (turned on settings in EXM App)
+* Uninstall Cap Frame X
+* Fix RTTS overlay for MSI Afterburner
 
 ## To do list
 
-* Uninstall Cap Frame X
-* Fix RTTS overlay for MSI Afterburner
 * Baseline tests (just to be safe)
 * Test each setting/toggle
 * Describe each setting/toggle
@@ -89,7 +89,7 @@ Test on maximum settings (Cinematic , V-Sync On, Ray Tracing, Shadows, Volumetri
 * .Net Framework 9.0.14
 * Msi Utility v3
 * Winhance
-* 
+* Wagnardsoft DDU
 
 ## Start
 
@@ -115,6 +115,8 @@ Installed Windows 11 23H2 from the image provided by Lenovo. Lenovo uses custom 
 * Windows 11 will restart your device several times and lead you to the lock screen. Depending on the options you set, it will keep all your files, apps, and user accounts.
 
 ### Dependancies hyperlinks
+
+Always perform the checksum of the software that you download!
 
 * Lenovo Windows Image      https://support.lenovo.com/us/en/solutions/ht103653
 
